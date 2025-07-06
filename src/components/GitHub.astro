@@ -1,39 +1,39 @@
 ---
 ---
 
-<section id="github" class="py-20 bg-black">
+<section id="github" class="py-20 transition-colors duration-300" :class="lightMode ? 'bg-white' : 'bg-black'">
   <div class="container mx-auto px-6">
     <div class="text-center mb-16 animate-slide-up">
-      <h2 class="text-4xl font-bold mb-4 text-white">GitHub Profile</h2>
-      <p class="text-lg text-gray-300">My open source contributions and repositories</p>
+      <h2 class="text-4xl font-bold mb-4 transition-colors duration-300" :class="lightMode ? 'text-gray-900' : 'text-white'">GitHub Profile</h2>
+      <p class="text-lg transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-300'">My open source contributions and repositories</p>
     </div>
     
     <!-- GitHub Stats -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto">
-      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+      <div class="border rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300" :class="lightMode ? 'bg-white border-gray-200' : 'bg-gray-900 border-gray-800'">
         <h3 id="repo-count" class="text-3xl font-bold text-blue-400 mb-2">-</h3>
-        <p class="text-gray-300">Repositories</p>
+        <p class="transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-300'">Repositories</p>
       </div>
-      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+      <div class="border rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300" :class="lightMode ? 'bg-white border-gray-200' : 'bg-gray-900 border-gray-800'">
         <h3 id="follower-count" class="text-3xl font-bold text-blue-400 mb-2">-</h3>
-        <p class="text-gray-300">Followers</p>
+        <p class="transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-300'">Followers</p>
       </div>
-      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+      <div class="border rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300" :class="lightMode ? 'bg-white border-gray-200' : 'bg-gray-900 border-gray-800'">
         <h3 id="following-count" class="text-3xl font-bold text-blue-400 mb-2">-</h3>
-        <p class="text-gray-300">Following</p>
+        <p class="transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-300'">Following</p>
       </div>
     </div>
     
     <!-- GitHub README -->
     <div class="max-w-6xl mx-auto mb-12">
-      <div class="bg-gray-900 border border-gray-800 rounded-xl p-8 shadow-lg">
-        <h3 class="text-2xl font-bold mb-6 text-white flex items-center">
+      <div class="border rounded-xl p-8 shadow-lg transition-colors duration-300" :class="lightMode ? 'bg-white border-gray-200' : 'bg-gray-900 border-gray-800'">
+        <h3 class="text-2xl font-bold mb-6 flex items-center transition-colors duration-300" :class="lightMode ? 'text-gray-900' : 'text-white'">
           📋 GitHub Profile README
         </h3>
         <div id="github-readme" class="prose prose-lg max-w-none">
           <div class="text-center py-8">
             <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-400 mx-auto"></div>
-            <p class="mt-4 text-gray-300">Loading GitHub profile...</p>
+            <p class="mt-4 transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-300'">Loading GitHub profile...</p>
           </div>
         </div>
       </div>
@@ -41,17 +41,17 @@
     
     <!-- Pinned Repositories -->
     <div class="max-w-6xl mx-auto">
-      <h3 class="text-2xl font-bold mb-8 text-white text-center">
+      <h3 class="text-2xl font-bold mb-8 text-center transition-colors duration-300" :class="lightMode ? 'text-gray-900' : 'text-white'">
         📌 Featured Repositories
       </h3>
       <div id="repos-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 shadow-lg animate-pulse">
-          <div class="h-4 bg-gray-600 rounded mb-4"></div>
-          <div class="h-3 bg-gray-600 rounded mb-2"></div>
-          <div class="h-3 bg-gray-600 rounded mb-4"></div>
+        <div class="border rounded-xl p-6 shadow-lg animate-pulse transition-colors duration-300" :class="lightMode ? 'bg-white border-gray-200' : 'bg-gray-900 border-gray-800'">
+          <div class="h-4 rounded mb-4 transition-colors duration-300" :class="lightMode ? 'bg-gray-200' : 'bg-gray-600'"></div>
+          <div class="h-3 rounded mb-2 transition-colors duration-300" :class="lightMode ? 'bg-gray-200' : 'bg-gray-600'"></div>
+          <div class="h-3 rounded mb-4 transition-colors duration-300" :class="lightMode ? 'bg-gray-200' : 'bg-gray-600'"></div>
           <div class="flex space-x-2">
-            <div class="h-6 w-12 bg-gray-600 rounded-full"></div>
-            <div class="h-6 w-12 bg-gray-600 rounded-full"></div>
+            <div class="h-6 w-12 rounded-full transition-colors duration-300" :class="lightMode ? 'bg-gray-200' : 'bg-gray-600'"></div>
+            <div class="h-6 w-12 rounded-full transition-colors duration-300" :class="lightMode ? 'bg-gray-200' : 'bg-gray-600'"></div>
           </div>
         </div>
       </div>
@@ -61,11 +61,27 @@
 
 <style>
   .repo-card {
-    @apply bg-gray-900 border border-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1;
+    @apply border rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1;
+  }
+  
+  .light .repo-card {
+    @apply bg-white border-gray-200;
+  }
+  
+  :not(.light) .repo-card {
+    @apply bg-gray-900 border-gray-800;
   }
   
   .repo-card h5 {
-    @apply text-lg font-semibold mb-3 text-white;
+    @apply text-lg font-semibold mb-3;
+  }
+  
+  .light .repo-card h5 {
+    @apply text-gray-900;
+  }
+  
+  :not(.light) .repo-card h5 {
+    @apply text-white;
   }
   
   .repo-card h5 a {
@@ -73,11 +89,27 @@
   }
   
   .repo-card p {
-    @apply text-gray-300 mb-4 text-sm leading-relaxed;
+    @apply mb-4 text-sm leading-relaxed;
+  }
+  
+  .light .repo-card p {
+    @apply text-gray-600;
+  }
+  
+  :not(.light) .repo-card p {
+    @apply text-gray-300;
   }
   
   .repo-stats {
-    @apply flex flex-wrap gap-3 text-sm text-gray-400;
+    @apply flex flex-wrap gap-3 text-sm;
+  }
+  
+  .light .repo-stats {
+    @apply text-gray-500;
+  }
+  
+  :not(.light) .repo-stats {
+    @apply text-gray-400;
   }
   
   .repo-stats span {
@@ -89,11 +121,27 @@
   }
   
   #github-readme h3 {
-    @apply text-xl font-semibold mb-4 text-white;
+    @apply text-xl font-semibold mb-4;
+  }
+  
+  .light #github-readme h3 {
+    @apply text-gray-900;
+  }
+  
+  :not(.light) #github-readme h3 {
+    @apply text-white;
   }
   
   #github-readme p {
-    @apply mb-4 text-gray-300;
+    @apply mb-4;
+  }
+  
+  .light #github-readme p {
+    @apply text-gray-600;
+  }
+  
+  :not(.light) #github-readme p {
+    @apply text-gray-300;
   }
   
   #github-readme img {
@@ -105,11 +153,27 @@
   }
   
   #github-readme ul {
-    @apply list-disc list-inside mb-4 text-gray-300;
+    @apply list-disc list-inside mb-4;
+  }
+  
+  .light #github-readme ul {
+    @apply text-gray-600;
+  }
+  
+  :not(.light) #github-readme ul {
+    @apply text-gray-300;
   }
   
   #github-readme blockquote {
-    @apply border-l-4 border-blue-400 pl-4 italic text-gray-400 bg-gray-800 p-4 rounded-r-lg;
+    @apply border-l-4 border-blue-400 pl-4 italic p-4 rounded-r-lg;
+  }
+  
+  .light #github-readme blockquote {
+    @apply text-gray-600 bg-gray-100;
+  }
+  
+  :not(.light) #github-readme blockquote {
+    @apply text-gray-400 bg-gray-800;
   }
 </style>
 
@@ -177,7 +241,7 @@
       <div class="text-center mb-8">
         <img src="/sushant-portfolio/images/banner.png" alt="DevOps Banner" class="mx-auto rounded-lg shadow-lg mb-6 max-w-full h-auto">
         <h1>Hey Everyone 👋, I'm Sushant Sonbarse</h1>
-        <h3 class="text-xl text-gray-300 mb-6">A passionate DevOps Engineer from India. I work in the Corporate IT Sector</h3>
+        <h3 class="text-xl mb-6">A passionate DevOps Engineer from India. I work in the Corporate IT Sector</h3>
         
         <div class="flex justify-center space-x-4 mb-8">
           <a href="https://github.com/sonbarse17" target="_blank">
