@@ -1,0 +1,66 @@
+---
+const projects = [
+  {
+    title: "End to End CI/CD Implementation",
+    description: "Implemented an automated CI/CD pipeline for an e-commerce platform, reducing deployment time by 85%. Optimized Docker images, used Helm for Kubernetes deployments, and created Python automation scripts.",
+    technologies: ["Jenkins", "Docker", "Kubernetes", "Helm", "Python"],
+    link: "/projects/cicd-implementation.html"
+  },
+  {
+    title: "Three Tier Serverless Architecture",
+    description: "Designed and deployed a scalable, serverless AWS architecture with EC2, VPC, Lambda, RDS, S3, CloudFront, and monitoring via the EFK stack.",
+    technologies: ["AWS", "Lambda", "S3", "CloudFront", "EFK Stack"],
+    link: "/projects/serverless-architecture.html"
+  },
+  {
+    title: "CRM Real Estate Microservices Deployment",
+    description: "Deployed a CRM platform with 35 microservices using Angular, Spring Boot, Terraform, and AWS EKS. Cut release duration from 4 hours to 1 hour.",
+    technologies: ["Angular", "Spring Boot", "Terraform", "AWS EKS"],
+    link: "/projects/crm-microservices.html"
+  }
+];
+---
+
+<section id="projects" class="py-20 bg-white dark:bg-gray-900">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16 animate-slide-up">
+      <h2 class="text-4xl font-bold mb-4 text-gray-900 dark:text-white">Featured Projects</h2>
+      <p class="text-lg text-gray-600 dark:text-gray-300">Real-world DevOps implementations and solutions</p>
+    </div>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      {projects.map((project, index) => (
+        <div 
+          class="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group animate-slide-up"
+          style={`animation-delay: ${index * 0.2}s`}
+        >
+          <h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+            {project.title}
+          </h3>
+          
+          <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+            {project.description}
+          </p>
+          
+          <div class="flex flex-wrap gap-2 mb-6">
+            {project.technologies.map((tech) => (
+              <span class="bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 px-3 py-1 rounded-full text-sm font-medium">
+                {tech}
+              </span>
+            ))}
+          </div>
+          
+          <a 
+            href={project.link}
+            class="inline-flex items-center text-primary-600 dark:text-primary-400 font-semibold hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
+          >
+            View Details 
+            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

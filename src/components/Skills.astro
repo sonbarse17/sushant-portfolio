@@ -1,0 +1,62 @@
+---
+const skills = [
+  {
+    category: "Cloud & Infrastructure",
+    items: ["AWS", "Azure", "GCP", "Terraform", "Kubernetes"],
+    icon: "☁️"
+  },
+  {
+    category: "DevOps Tools",
+    items: ["Jenkins", "GitLab CI", "GitHub Actions", "Ansible", "Maven"],
+    icon: "🔧"
+  },
+  {
+    category: "Containerization",
+    items: ["Docker", "Helm"],
+    icon: "📦"
+  },
+  {
+    category: "Monitoring",
+    items: ["Prometheus", "Grafana", "Datadog", "EFK Stack"],
+    icon: "📊"
+  },
+  {
+    category: "Scripting",
+    items: ["Bash", "Python"],
+    icon: "💻"
+  },
+  {
+    category: "Other",
+    items: ["Linux", "Git"],
+    icon: "⚙️"
+  }
+];
+---
+
+<section id="skills" class="py-20 bg-gray-50 dark:bg-gray-800">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16 animate-slide-up">
+      <h2 class="text-4xl font-bold mb-4 text-gray-900 dark:text-white">Skills & Technologies</h2>
+      <p class="text-lg text-gray-600 dark:text-gray-300">Technologies I work with to build scalable solutions</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      {skills.map((skill, index) => (
+        <div 
+          class="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-slide-up"
+          style={`animation-delay: ${index * 0.1}s`}
+        >
+          <div class="text-3xl mb-4">{skill.icon}</div>
+          <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">{skill.category}</h3>
+          <div class="flex flex-wrap gap-2">
+            {skill.items.map((item) => (
+              <span class="bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 px-3 py-1 rounded-full text-sm font-medium">
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
