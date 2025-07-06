@@ -30,7 +30,7 @@
         <h3 class="text-2xl font-bold mb-6 flex items-center transition-colors duration-300" :class="lightMode ? 'text-gray-900' : 'text-white'">
           📋 GitHub Profile README
         </h3>
-        <div id="github-readme" class="prose prose-lg max-w-none">
+        <div id="github-readme" class="prose prose-lg max-w-none" :class="lightMode ? 'text-gray-900' : 'text-gray-300'" :style="lightMode ? 'color: #111827 !important;' : 'color: #d1d5db !important;'">
           <div class="text-center py-8">
             <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-400 mx-auto"></div>
             <p class="mt-4 transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-300'">Loading GitHub profile...</p>
@@ -313,7 +313,7 @@
       <div class="text-center mb-8">
         <img src="/sushant-portfolio/images/banner.png" alt="DevOps Banner" class="mx-auto rounded-lg shadow-lg mb-6 max-w-full h-auto">
         <h1 style="color: #3b82f6 !important;">Hey Everyone 👋, I'm Sushant Sonbarse</h1>
-        <h3 class="text-xl mb-6" style="color: inherit !important;">A passionate DevOps Engineer from India. I work in the Corporate IT Sector</h3>
+        <h3 class="text-xl mb-6">A passionate DevOps Engineer from India. I work in the Corporate IT Sector</h3>
         
         <div class="flex justify-center space-x-4 mb-8">
           <a href="https://github.com/sonbarse17" target="_blank">
@@ -330,9 +330,9 @@
       <div class="grid md:grid-cols-2 gap-8 mb-8">
         <div>
           <ul class="space-y-2">
-            <li style="color: inherit !important;">👨‍💻 All of my projects are available at <a href="https://github.com/sonbarse17" target="_blank" style="color: #3b82f6 !important;">GitHub</a></li>
-            <li style="color: inherit !important;">💬 Ask me about <strong style="font-weight: 600 !important; color: inherit !important;">DevOps & Cloud DevOps</strong></li>
-            <li style="color: inherit !important;">📫 How to reach me <strong style="font-weight: 600 !important; color: inherit !important;">sushantsonbarse07@gmail.com</strong></li>
+            <li>👨‍💻 All of my projects are available at <a href="https://github.com/sonbarse17" target="_blank" style="color: #3b82f6 !important;">GitHub</a></li>
+            <li>💬 Ask me about <strong>DevOps & Cloud DevOps</strong></li>
+            <li>📫 How to reach me <strong>sushantsonbarse07@gmail.com</strong></li>
           </ul>
         </div>
         <div>
@@ -350,12 +350,12 @@
       </div>
       
       <div class="text-center">
-        <h3 class="text-xl font-semibold mb-4" style="color: inherit !important;">👨‍💼 About Me & 🤝 Open to Collaborations</h3>
-        <p class="mb-4" style="color: inherit !important;">🤝 Open to <strong style="font-weight: 600 !important; color: inherit !important;">Project Collaborations</strong><br>
-        💼 Offering <strong style="font-weight: 600 !important; color: inherit !important;">DevOps Consulting / Mentorship</strong><br>
+        <h3 class="text-xl font-semibold mb-4">👨‍💼 About Me & 🤝 Open to Collaborations</h3>
+        <p class="mb-4">🤝 Open to <strong>Project Collaborations</strong><br>
+        💼 Offering <strong>DevOps Consulting / Mentorship</strong><br>
         📧 Let's chat: <a href="mailto:sushantsonbarse07@gmail.com" style="color: #3b82f6 !important;">sushantsonbarse07@gmail.com</a></p>
         
-        <blockquote class="text-lg border-l-4 border-blue-400 pl-4 italic p-4 rounded-r-lg" style="color: inherit !important; background-color: rgba(156, 163, 175, 0.1) !important;">
+        <blockquote class="text-lg border-l-4 border-blue-400 pl-4 italic p-4 rounded-r-lg">
           "Helping people crack DevOps with real-world knowledge. Let's build and automate the future, one pipeline at a time!"
         </blockquote>
       </div>
