@@ -1,14 +1,24 @@
 ---
 ---
 
-<section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-black to-gray-900">
-  <div class="container mx-auto px-4 sm:px-6 text-center animate-fade-in">
-    <img 
-      src="/sushant-portfolio/images/Snapchat-1800569552-01-removebg-preview.png" 
-      alt="Sushant Sonbarse - DevOps Engineer" 
-      class="w-32 h-32 sm:w-40 sm:h-40 rounded-full mx-auto mb-6 sm:mb-8 shadow-2xl border-4 border-gray-700 hover:scale-105 transition-transform duration-300 object-cover"
-      loading="eager"
-    />
+<section class="min-h-screen flex items-center justify-center relative overflow-hidden">
+  <!-- Animated background -->
+  <div class="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_50%)] animate-pulse"></div>
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-float"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl animate-float-delayed"></div>
+  </div>
+  
+  <div class="container mx-auto px-4 sm:px-6 text-center relative z-10">
+    <div class="relative mb-6 sm:mb-8 group">
+      <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+      <img 
+        src="/sushant-portfolio/images/Snapchat-1800569552-01-removebg-preview.png" 
+        alt="Sushant Sonbarse - DevOps Engineer" 
+        class="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full mx-auto object-cover bg-black border-2 border-gray-800 group-hover:scale-105 transition-all duration-500"
+        loading="eager"
+      />
+    </div>
     
     <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
       <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Hi, I'm </span>
@@ -24,19 +34,31 @@
       Passionate about infrastructure as code and cloud technologies.
     </p>
     
-    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
+    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
       <a 
         href="/sushant-portfolio/sushant_sonbarse_resume.pdf" 
         download
-        class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+        class="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-medium tracking-tighter text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl hover:shadow-blue-500/25"
       >
-        Download Resume
+        <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></span>
+        <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-700 to-purple-700 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+        <span class="relative flex items-center gap-2">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+          </svg>
+          Download Resume
+        </span>
       </a>
       <a 
         href="#contact"
-        class="border-2 border-blue-400 text-blue-400 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105"
+        class="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-medium tracking-tighter text-blue-400 border-2 border-blue-400/50 rounded-full hover:scale-105 transition-all duration-300 backdrop-blur-sm bg-blue-400/5 hover:bg-blue-400/10 hover:border-blue-400"
       >
-        Contact Me
+        <span class="relative flex items-center gap-2">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+          </svg>
+          Contact Me
+        </span>
       </a>
     </div>
   </div>
@@ -44,12 +66,20 @@
 
 <style>
   @keyframes gradient {
-    0%, 100% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    33% { transform: translateY(-10px) rotate(1deg); }
+    66% { transform: translateY(5px) rotate(-1deg); }
+  }
+  
+  @keyframes tilt {
+    0%, 50%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(1deg); }
+    75% { transform: rotate(-1deg); }
   }
   
   .animate-gradient {
@@ -60,5 +90,18 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-float-delayed {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: -3s;
+  }
+  
+  .animate-tilt {
+    animation: tilt 10s infinite linear;
   }
 </style>
