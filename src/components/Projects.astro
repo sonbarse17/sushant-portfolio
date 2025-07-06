@@ -21,7 +21,7 @@ const projects = [
 ];
 ---
 
-<section id="projects" class="py-20 transition-colors duration-300" :class="lightMode ? 'bg-white' : 'bg-black'"
+<section id="projects" class="py-20 transition-colors duration-300" :class="lightMode ? 'bg-white' : 'bg-black'">
   <div class="container mx-auto px-4 sm:px-6">
     <div class="text-center mb-16 animate-slide-up">
       <h2 class="text-3xl sm:text-4xl font-bold mb-4 transition-colors duration-300" :class="lightMode ? 'text-gray-900' : 'text-white'">Featured Projects</h2>
@@ -31,7 +31,7 @@ const projects = [
     <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
       {projects.map((project, index) => (
         <div 
-          class="group relative bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-3 hover:border-blue-500/50 animate-slide-up overflow-hidden"
+          class="group relative border rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-3 animate-slide-up overflow-hidden" :class="lightMode ? 'bg-gradient-to-br from-white to-gray-50 border-gray-200 hover:border-blue-500/50' : 'bg-gradient-to-br from-gray-900 to-black border-gray-800 hover:border-blue-500/50'"
           style={`animation-delay: ${index * 0.2}s`}
         >
           <!-- Gradient overlay -->
@@ -40,23 +40,23 @@ const projects = [
           <!-- Content -->
           <div class="relative z-10">
             <div class="flex items-start justify-between mb-4">
-              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors duration-300">
+              <h3 class="text-xl font-bold group-hover:text-blue-400 transition-colors duration-300" :class="lightMode ? 'text-gray-900' : 'text-white'">
                 {project.title}
               </h3>
-              <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center group-hover:bg-blue-500/30 transition-colors duration-300">
+              <div class="w-12 h-12 rounded-xl flex items-center justify-center transition-colors duration-300" :class="lightMode ? 'bg-blue-100 group-hover:bg-blue-200' : 'bg-blue-500/20 group-hover:bg-blue-500/30'">
                 <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
                 </svg>
               </div>
             </div>
             
-            <p class="text-gray-300 mb-6 leading-relaxed text-sm">
+            <p class="mb-6 leading-relaxed text-sm transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-300'">
               {project.description}
             </p>
             
             <div class="flex flex-wrap gap-2 mb-8">
               {project.technologies.map((tech) => (
-                <span class="bg-gray-800/90 backdrop-blur-sm text-blue-300 px-3 py-1.5 rounded-full text-xs font-medium border border-gray-700/50 hover:border-blue-400/50 transition-colors duration-300">
+                <span class="backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium border hover:border-blue-500/50 transition-colors duration-300" :class="lightMode ? 'bg-gray-100/80 text-blue-600 border-gray-300/50' : 'bg-gray-800/80 text-blue-300 border-gray-700/50'">
                   {tech}
                 </span>
               ))}
@@ -65,7 +65,7 @@ const projects = [
             <div class="flex items-center justify-between">
               <a 
                 href={project.link}
-                class="inline-flex items-center px-4 py-2 bg-blue-500/20 hover:bg-blue-500/30 text-blue-400 font-semibold rounded-lg transition-all duration-300 hover:scale-105 border border-blue-500/30 hover:border-blue-400/50"
+                class="inline-flex items-center px-4 py-2 font-semibold rounded-lg transition-all duration-300 hover:scale-105 border" :class="lightMode ? 'bg-blue-100/50 hover:bg-blue-200/50 text-blue-600 border-blue-300/50 hover:border-blue-500/50' : 'bg-blue-500/20 hover:bg-blue-500/30 text-blue-400 border-blue-500/30 hover:border-blue-400/50'"
               >
                 View Details
                 <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -73,7 +73,7 @@ const projects = [
                 </svg>
               </a>
               
-              <div class="flex items-center space-x-2 text-gray-500">
+              <div class="flex items-center space-x-2 transition-colors duration-300" :class="lightMode ? 'text-gray-500' : 'text-gray-500'">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
@@ -83,8 +83,8 @@ const projects = [
           </div>
           
           <!-- Decorative elements -->
-          <div class="absolute -top-4 -right-4 w-24 h-24 bg-blue-500/10 rounded-full blur-xl group-hover:bg-blue-500/20 transition-colors duration-500"></div>
-          <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-purple-500/10 rounded-full blur-xl group-hover:bg-purple-500/20 transition-colors duration-500"></div>
+          <div class="absolute -top-4 -right-4 w-24 h-24 rounded-full blur-xl group-hover:bg-blue-500/20 transition-colors duration-500" :class="lightMode ? 'bg-blue-200/20' : 'bg-blue-500/10'"></div>
+          <div class="absolute -bottom-4 -left-4 w-32 h-32 rounded-full blur-xl group-hover:bg-purple-500/20 transition-colors duration-500" :class="lightMode ? 'bg-purple-200/20' : 'bg-purple-500/10'"></div>
         </div>
       ))}
     </div>
