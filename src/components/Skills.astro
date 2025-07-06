@@ -2,32 +2,58 @@
 const skills = [
   {
     category: "Cloud & Infrastructure",
-    items: ["AWS", "Azure", "GCP", "Terraform", "Kubernetes"],
+    items: [
+      { name: "AWS", icon: "/icons/aws.svg" },
+      { name: "Azure", icon: "/icons/azure.svg" },
+      { name: "GCP", icon: "/icons/gcp.svg" },
+      { name: "Terraform", icon: "/icons/terraform.svg" },
+      { name: "Kubernetes", icon: "/icons/kubernetes.svg" }
+    ],
     icon: "☁️"
   },
   {
     category: "DevOps Tools",
-    items: ["Jenkins", "GitLab CI", "GitHub Actions", "Ansible", "Maven"],
+    items: [
+      { name: "Jenkins", icon: "/icons/jenkins.svg" },
+      { name: "GitLab CI", icon: "🔧" },
+      { name: "GitHub Actions", icon: "/icons/github.svg" },
+      { name: "Ansible", icon: "/icons/ansible.svg" },
+      { name: "Maven", icon: "🔧" }
+    ],
     icon: "🔧"
   },
   {
     category: "Containerization",
-    items: ["Docker", "Helm"],
+    items: [
+      { name: "Docker", icon: "/icons/docker.svg" },
+      { name: "Helm", icon: "/icons/helm.svg" }
+    ],
     icon: "📦"
   },
   {
     category: "Monitoring",
-    items: ["Prometheus", "Grafana", "Datadog", "EFK Stack"],
+    items: [
+      { name: "Prometheus", icon: "/icons/prometheus.svg" },
+      { name: "Grafana", icon: "/icons/grafana.svg" },
+      { name: "Datadog", icon: "📊" },
+      { name: "EFK Stack", icon: "📊" }
+    ],
     icon: "📊"
   },
   {
     category: "Scripting",
-    items: ["Bash", "Python"],
+    items: [
+      { name: "Bash", icon: "/icons/bash.svg" },
+      { name: "Python", icon: "/icons/python.svg" }
+    ],
     icon: "💻"
   },
   {
     category: "Other",
-    items: ["Linux", "Git"],
+    items: [
+      { name: "Linux", icon: "/icons/linux.svg" },
+      { name: "Git", icon: "/icons/git.svg" }
+    ],
     icon: "⚙️"
   }
 ];
@@ -50,8 +76,19 @@ const skills = [
           <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">{skill.category}</h3>
           <div class="flex flex-wrap gap-2">
             {skill.items.map((item) => (
-              <span class="bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 px-3 py-1 rounded-full text-sm font-medium">
-                {item}
+              <span class="bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 px-3 py-1 rounded-full text-sm font-medium flex items-center gap-2">
+                {typeof item === 'string' ? (
+                  item
+                ) : (
+                  <>
+                    {item.icon.endsWith('.svg') ? (
+                      <img src={item.icon} alt={item.name} class="w-4 h-4" />
+                    ) : (
+                      <span>{item.icon}</span>
+                    )}
+                    {item.name}
+                  </>
+                )}
               </span>
             ))}
           </div>

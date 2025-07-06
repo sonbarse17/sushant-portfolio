@@ -15,11 +15,11 @@ A modern, professional portfolio website built with Astro, Tailwind CSS, and Alp
 
 ## 🛠️ Tech Stack
 
-- **Framework**: [Astro](https://astro.build/) - Static Site Generator
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS
-- **Interactivity**: [Alpine.js](https://alpinejs.dev/) - Minimal JavaScript framework
+- **Framework**: [Astro](https://astro.build/) v4.16+ - Static Site Generator
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) v3.4+ - Utility-first CSS
+- **Interactivity**: [Alpine.js](https://alpinejs.dev/) v3.14+ - Minimal JavaScript framework
 - **Fonts**: [Inter](https://fonts.google.com/specimen/Inter) - Modern sans-serif
-- **Icons**: Heroicons and Emoji
+- **Icons**: Official SVG icons for tools + Emoji
 
 ## 📦 Installation
 
@@ -73,6 +73,11 @@ A modern, professional portfolio website built with Astro, Tailwind CSS, and Alp
 /
 ├── public/
 │   ├── images/
+│   ├── icons/
+│   │   ├── aws.svg
+│   │   ├── docker.svg
+│   │   ├── kubernetes.svg
+│   │   └── ... (other tool icons)
 │   └── sushant_sonbarse_resume.pdf
 ├── src/
 │   ├── components/
@@ -110,6 +115,7 @@ colors: {
 - **Skills**: Modify `src/components/Skills.astro`
 - **Projects**: Update `src/components/Projects.astro`
 - **Resume**: Replace `public/sushant_sonbarse_resume.pdf`
+- **Tool Icons**: Official SVG icons in `public/icons/` directory
 
 ### Dark Mode
 Dark mode is implemented using:
