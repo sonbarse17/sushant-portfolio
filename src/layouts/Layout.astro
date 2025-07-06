@@ -8,7 +8,7 @@ const { title, description = "Portfolio of Sushant Sonbarse, DevOps Engineer spe
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{ lightMode: false }" x-init="lightMode = localStorage.getItem('lightMode') === 'true'" :class="{ 'light': lightMode }">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,7 +30,14 @@ const { title, description = "Portfolio of Sushant Sonbarse, DevOps Engineer spe
   <header class="fixed top-0 w-full bg-black/90 backdrop-blur-md z-50 border-b border-gray-800">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
       <h1 class="text-xl font-bold text-blue-400">Sushant Sonbarse</h1>
-
+      <button 
+        @click="lightMode = !lightMode; localStorage.setItem('lightMode', lightMode)"
+        class="p-2 rounded-lg bg-gray-900 hover:bg-gray-800 transition-colors"
+        aria-label="Toggle Light Mode"
+      >
+        <span x-show="!lightMode" class="text-gray-400">☀️</span>
+        <span x-show="lightMode" class="text-gray-400">🌙</span>
+      </button>
     </nav>
   </header>
 
