@@ -67,8 +67,14 @@ const GITHUB_README_API = `https://api.github.com/repos/${GITHUB_USERNAME}/${GIT
 
 async function fetchGitHubData() {
   try {
+    // Setup headers with token if available
+    const headers = {};
+    if (window.GITHUB_CONFIG && window.GITHUB_CONFIG.token !== 'YOUR_TOKEN_HERE') {
+      headers['Authorization'] = `token ${window.GITHUB_CONFIG.token}`;
+    }
+    
     // Fetch user data
-    const userResponse = await fetch(GITHUB_API);
+    const userResponse = await fetch(GITHUB_API, { headers });
     const userData = await userResponse.json();
     
     document.getElementById('repo-count').textContent = userData.public_repos;
@@ -76,16 +82,39 @@ async function fetchGitHubData() {
     document.getElementById('following-count').textContent = userData.following;
     
     // Fetch repositories and filter pinned ones
-    const reposResponse = await fetch(GITHUB_PINNED_API);
+    const reposResponse = await fetch(GITHUB_PINNED_API, { headers });
     const allRepos = await reposResponse.json();
     
-    // Get pinned repositories (starred by user or with high activity)
-    const pinnedRepos = allRepos
-      .filter(repo => !repo.fork && (repo.stargazers_count > 0 || repo.name.includes('portfolio') || repo.name.includes('project')))
+    // Filter and sort repositories by relevance
+    const filteredRepos = allRepos
+      .filter(repo => !repo.fork)
+      .sort((a, b) => {
+        // Prioritize repos with stars, recent activity, and specific keywords
+        const aScore = (a.stargazers_count * 3) + (a.forks_count * 2) + 
+                      (a.name.toLowerCase().includes('devops') ? 10 : 0) +
+                      (a.name.toLowerCase().includes('aws') ? 10 : 0) +
+                      (a.name.toLowerCase().includes('docker') ? 10 : 0) +
+                      (a.name.toLowerCase().includes('kubernetes') ? 10 : 0) +
+                      (a.name.toLowerCase().includes('terraform') ? 10 : 0) +
+                      (a.name.toLowerCase().includes('jenkins') ? 10 : 0) +
+                      (a.name.toLowerCase().includes('portfolio') ? 15 : 0) +
+                      (a.name.toLowerCase().includes('project') ? 8 : 0);
+        
+        const bScore = (b.stargazers_count * 3) + (b.forks_count * 2) + 
+                      (b.name.toLowerCase().includes('devops') ? 10 : 0) +
+                      (b.name.toLowerCase().includes('aws') ? 10 : 0) +
+                      (b.name.toLowerCase().includes('docker') ? 10 : 0) +
+                      (b.name.toLowerCase().includes('kubernetes') ? 10 : 0) +
+                      (b.name.toLowerCase().includes('terraform') ? 10 : 0) +
+                      (b.name.toLowerCase().includes('jenkins') ? 10 : 0) +
+                      (b.name.toLowerCase().includes('portfolio') ? 15 : 0) +
+                      (b.name.toLowerCase().includes('project') ? 8 : 0);
+        
+        return bScore - aScore;
+      })
       .slice(0, 6);
     
-    // If no pinned repos found, get most recent non-fork repos
-    const reposData = pinnedRepos.length > 0 ? pinnedRepos : allRepos.filter(repo => !repo.fork).slice(0, 6);
+    const reposData = filteredRepos;
     
     const reposList = document.getElementById('repos-list');
     reposList.innerHTML = reposData.map(repo => `
@@ -104,7 +133,7 @@ async function fetchGitHubData() {
     const readmeContent = `<h1 align="center">Hey Everyone 👋, I'm Sushant Sonbarse</h1>
 
 <div align="center">
-  <img src="https://github.com/sonbarse17/sonbarse17/blob/main/banner.png" alt="DevOps Banner">
+  <img src="images/banner.png" alt="DevOps Banner">
 </div>
 
 <h3 align="center">A passionate DevOps Engineer from India. I work in the Corporate IT Sector</h3>

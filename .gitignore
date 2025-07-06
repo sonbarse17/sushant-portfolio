@@ -1,0 +1,7 @@
+# Security - Never commit tokens
+config.js
+
+# Other files to ignore
+node_modules/
+.env
+*.log
