@@ -1,40 +1,39 @@
 ---
 ---
 
-<section id="github" class="py-20 bg-white dark:bg-gray-900">
+<section id="github" class="py-20 bg-black">
   <div class="container mx-auto px-6">
     <div class="text-center mb-16 animate-slide-up">
-      <h2 class="text-4xl font-bold mb-4 text-gray-900 dark:text-white">GitHub Profile</h2>
-      <p class="text-lg text-gray-600 dark:text-gray-300">My open source contributions and repositories</p>
+      <h2 class="text-4xl font-bold mb-4 text-white">GitHub Profile</h2>
+      <p class="text-lg text-gray-300">My open source contributions and repositories</p>
     </div>
     
     <!-- GitHub Stats -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto">
-      <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
-        <h3 id="repo-count" class="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-2">-</h3>
-        <p class="text-gray-600 dark:text-gray-300">Repositories</p>
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+        <h3 id="repo-count" class="text-3xl font-bold text-blue-400 mb-2">-</h3>
+        <p class="text-gray-300">Repositories</p>
       </div>
-      <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
-        <h3 id="follower-count" class="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-2">-</h3>
-        <p class="text-gray-600 dark:text-gray-300">Followers</p>
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+        <h3 id="follower-count" class="text-3xl font-bold text-blue-400 mb-2">-</h3>
+        <p class="text-gray-300">Followers</p>
       </div>
-      <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
-        <h3 id="following-count" class="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-2">-</h3>
-        <p class="text-gray-600 dark:text-gray-300">Following</p>
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+        <h3 id="following-count" class="text-3xl font-bold text-blue-400 mb-2">-</h3>
+        <p class="text-gray-300">Following</p>
       </div>
     </div>
     
     <!-- GitHub README -->
     <div class="max-w-6xl mx-auto mb-12">
-      <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-        <h3 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white flex items-center">
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-8 shadow-lg">
+        <h3 class="text-2xl font-bold mb-6 text-white flex items-center">
           📋 GitHub Profile README
         </h3>
-        <div id="github-readme" class="prose prose-lg dark:prose-invert max-w-none">
-          <!-- GitHub README content will be loaded here -->
+        <div id="github-readme" class="prose prose-lg max-w-none">
           <div class="text-center py-8">
-            <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary-600 mx-auto"></div>
-            <p class="mt-4 text-gray-600 dark:text-gray-300">Loading GitHub profile...</p>
+            <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-400 mx-auto"></div>
+            <p class="mt-4 text-gray-300">Loading GitHub profile...</p>
           </div>
         </div>
       </div>
@@ -42,18 +41,17 @@
     
     <!-- Pinned Repositories -->
     <div class="max-w-6xl mx-auto">
-      <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white text-center">
+      <h3 class="text-2xl font-bold mb-8 text-white text-center">
         📌 Featured Repositories
       </h3>
       <div id="repos-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Repository cards will be loaded here -->
-        <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 shadow-lg animate-pulse">
-          <div class="h-4 bg-gray-300 dark:bg-gray-600 rounded mb-4"></div>
-          <div class="h-3 bg-gray-300 dark:bg-gray-600 rounded mb-2"></div>
-          <div class="h-3 bg-gray-300 dark:bg-gray-600 rounded mb-4"></div>
+        <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 shadow-lg animate-pulse">
+          <div class="h-4 bg-gray-600 rounded mb-4"></div>
+          <div class="h-3 bg-gray-600 rounded mb-2"></div>
+          <div class="h-3 bg-gray-600 rounded mb-4"></div>
           <div class="flex space-x-2">
-            <div class="h-6 w-12 bg-gray-300 dark:bg-gray-600 rounded-full"></div>
-            <div class="h-6 w-12 bg-gray-300 dark:bg-gray-600 rounded-full"></div>
+            <div class="h-6 w-12 bg-gray-600 rounded-full"></div>
+            <div class="h-6 w-12 bg-gray-600 rounded-full"></div>
           </div>
         </div>
       </div>
@@ -63,40 +61,39 @@
 
 <style>
   .repo-card {
-    @apply bg-gray-50 dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1;
+    @apply bg-gray-900 border border-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1;
   }
   
   .repo-card h5 {
-    @apply text-lg font-semibold mb-3 text-gray-900 dark:text-white;
+    @apply text-lg font-semibold mb-3 text-white;
   }
   
   .repo-card h5 a {
-    @apply text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors;
+    @apply text-blue-400 hover:text-blue-300 transition-colors;
   }
   
   .repo-card p {
-    @apply text-gray-600 dark:text-gray-300 mb-4 text-sm leading-relaxed;
+    @apply text-gray-300 mb-4 text-sm leading-relaxed;
   }
   
   .repo-stats {
-    @apply flex flex-wrap gap-3 text-sm text-gray-500 dark:text-gray-400;
+    @apply flex flex-wrap gap-3 text-sm text-gray-400;
   }
   
   .repo-stats span {
     @apply flex items-center gap-1;
   }
   
-  /* GitHub README Styles */
   #github-readme h1 {
-    @apply text-3xl font-bold text-center mb-6 text-primary-600 dark:text-primary-400;
+    @apply text-3xl font-bold text-center mb-6 text-blue-400;
   }
   
   #github-readme h3 {
-    @apply text-xl font-semibold mb-4 text-gray-900 dark:text-white;
+    @apply text-xl font-semibold mb-4 text-white;
   }
   
   #github-readme p {
-    @apply mb-4 text-gray-700 dark:text-gray-300;
+    @apply mb-4 text-gray-300;
   }
   
   #github-readme img {
@@ -104,27 +101,25 @@
   }
   
   #github-readme a {
-    @apply text-primary-600 dark:text-primary-400 hover:underline;
+    @apply text-blue-400 hover:underline;
   }
   
   #github-readme ul {
-    @apply list-disc list-inside mb-4 text-gray-700 dark:text-gray-300;
+    @apply list-disc list-inside mb-4 text-gray-300;
   }
   
   #github-readme blockquote {
-    @apply border-l-4 border-primary-600 pl-4 italic text-gray-600 dark:text-gray-400 bg-gray-50 dark:bg-gray-800 p-4 rounded-r-lg;
+    @apply border-l-4 border-blue-400 pl-4 italic text-gray-400 bg-gray-800 p-4 rounded-r-lg;
   }
 </style>
 
 <script>
-  // GitHub API Integration
   const GITHUB_USERNAME = 'sonbarse17';
   const GITHUB_API = `https://api.github.com/users/${GITHUB_USERNAME}`;
   const GITHUB_REPOS_API = `https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=100`;
 
   async function fetchGitHubData() {
     try {
-      // Fetch user data
       const userResponse = await fetch(GITHUB_API);
       const userData = await userResponse.json();
       
@@ -132,11 +127,9 @@
       document.getElementById('follower-count').textContent = userData.followers;
       document.getElementById('following-count').textContent = userData.following;
       
-      // Fetch repositories
       const reposResponse = await fetch(GITHUB_REPOS_API);
       const allRepos = await reposResponse.json();
       
-      // Filter and sort repositories by relevance
       const filteredRepos = allRepos
         .filter(repo => !repo.fork)
         .sort((a, b) => {
@@ -154,7 +147,6 @@
         })
         .slice(0, 6);
       
-      // Display repositories
       const reposList = document.getElementById('repos-list');
       reposList.innerHTML = filteredRepos.map(repo => `
         <div class="repo-card">
@@ -168,7 +160,6 @@
         </div>
       `).join('');
       
-      // Load GitHub README content
       loadGitHubReadme();
       
     } catch (error) {
@@ -182,9 +173,9 @@
   function loadGitHubReadme() {
     const readmeContent = `
       <div class="text-center mb-8">
-        <img src="/images/banner.png" alt="DevOps Banner" class="mx-auto rounded-lg shadow-lg mb-6 max-w-full h-auto">
+        <img src="/sushant-portfolio/images/banner.png" alt="DevOps Banner" class="mx-auto rounded-lg shadow-lg mb-6 max-w-full h-auto">
         <h1>Hey Everyone 👋, I'm Sushant Sonbarse</h1>
-        <h3 class="text-xl text-gray-600 dark:text-gray-300 mb-6">A passionate DevOps Engineer from India. I work in the Corporate IT Sector</h3>
+        <h3 class="text-xl text-gray-300 mb-6">A passionate DevOps Engineer from India. I work in the Corporate IT Sector</h3>
         
         <div class="flex justify-center space-x-4 mb-8">
           <a href="https://github.com/sonbarse17" target="_blank">
@@ -235,6 +226,5 @@
     document.getElementById('github-readme').innerHTML = readmeContent;
   }
 
-  // Load GitHub data when component is visible
   document.addEventListener('DOMContentLoaded', fetchGitHubData);
 </script>
