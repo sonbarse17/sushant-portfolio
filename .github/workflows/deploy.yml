@@ -20,7 +20,13 @@ jobs:
     
     - name: Replace GitHub token
       run: |
-        sed -i "s/YOUR_TOKEN_HERE/${{ secrets.PORTFOLIO_TOKEN }}/g" config.js
+        if [ -f "config.js" ]; then
+          sed -i "s/YOUR_TOKEN_HERE/${{ secrets.PORTFOLIO_TOKEN }}/g" config.js
+        else
+          echo "config.js not found, creating from template"
+          cp config-template.js config.js
+          sed -i "s/YOUR_TOKEN_HERE/${{ secrets.PORTFOLIO_TOKEN }}/g" config.js
+        fi
     
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
