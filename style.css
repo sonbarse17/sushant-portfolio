@@ -296,6 +296,154 @@ body {
   margin-bottom: 2rem;
 }
 
+/* GitHub Stats */
+.github-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.stat-card h4 {
+  font-size: 2rem;
+  margin: 0;
+  color: var(--accent-color);
+}
+
+.stat-card p {
+  margin: 0.5rem 0 0;
+  opacity: 0.8;
+}
+
+/* Repository Cards */
+.recent-repos {
+  margin-top: 2rem;
+}
+
+#repos-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.repo-card {
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: all 0.3s ease;
+}
+
+.repo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.repo-card h5 {
+  margin: 0 0 0.5rem;
+}
+
+.repo-card h5 a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.repo-card h5 a:hover {
+  text-decoration: underline;
+}
+
+.repo-card p {
+  margin: 0.5rem 0 1rem;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+.repo-stats {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* GitHub README */
+.github-readme {
+  margin: 2rem 0;
+}
+
+.readme-content {
+  background: rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid var(--accent-color);
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.readme-content h1, .readme-content h2, .readme-content h3 {
+  color: var(--accent-color);
+}
+
+/* LinkedIn Section */
+.linkedin-info {
+  text-align: center;
+}
+
+.linkedin-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.linkedin-stat {
+  padding: 1rem;
+  background: linear-gradient(135deg, rgba(0,119,181,0.1), rgba(0,119,181,0.05));
+  border-radius: 10px;
+  border: 1px solid rgba(0,119,181,0.2);
+}
+
+.linkedin-stat h4 {
+  margin: 0;
+  color: #0077b5;
+  font-size: 1.5rem;
+}
+
+.linkedin-stat p {
+  margin: 0.5rem 0 0;
+  opacity: 0.8;
+}
+
+.linkedin-details {
+  text-align: left;
+  margin: 2rem 0;
+}
+
+.linkedin-details p {
+  margin: 0.8rem 0;
+  font-size: 1rem;
+}
+
+.linkedin-info .button {
+  margin-top: 1rem;
+}
+
+
+
 .contact ul {
   list-style: none;
   padding: 0;
@@ -391,6 +539,28 @@ a:focus, button:focus {
   
   .button {
     padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .github-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .stat-card {
+    padding: 1rem;
+  }
+  
+  .stat-card h4 {
+    font-size: 1.5rem;
+  }
+  
+  #repos-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .readme-content {
+    padding: 1rem;
     font-size: 0.9rem;
   }
 }
