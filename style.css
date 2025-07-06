@@ -386,16 +386,121 @@ body {
 }
 
 .readme-content {
-  background: rgba(0,0,0,0.1);
-  padding: 1.5rem;
-  border-radius: 10px;
-  border-left: 4px solid var(--accent-color);
-  max-height: 400px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 2rem;
+  border-radius: 15px;
+  max-height: 500px;
   overflow-y: auto;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.7;
+}
+
+.readme-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.readme-content::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.1);
+  border-radius: 4px;
+}
+
+.readme-content::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 4px;
 }
 
 .readme-content h1, .readme-content h2, .readme-content h3 {
   color: var(--accent-color);
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.readme-content h1 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.5rem;
+}
+
+.readme-content h2 {
+  font-size: 1.4rem;
+}
+
+.readme-content h3 {
+  font-size: 1.2rem;
+}
+
+.readme-content p {
+  margin: 1rem 0;
+  opacity: 0.9;
+}
+
+.readme-content a {
+  color: var(--accent-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.readme-content a:hover {
+  border-bottom-color: var(--accent-color);
+}
+
+.readme-content strong {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.readme-content em {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.readme-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+}
+
+.readme-content p[align="center"] {
+  text-align: center;
+}
+
+.readme-content p[align="left"] {
+  text-align: left;
+}
+
+.readme-content div[align="center"] {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.readme-content ul {
+  padding-left: 1.5rem;
+}
+
+.readme-content li {
+  margin: 0.5rem 0;
+}
+
+.readme-content blockquote {
+  border-left: 4px solid var(--accent-color);
+  padding-left: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+  opacity: 0.9;
+  background: rgba(255,255,255,0.05);
+  border-radius: 0 8px 8px 0;
+  padding: 1rem;
+}
+
+.readme-content hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+  margin: 2rem 0;
 }
 
 /* LinkedIn Section */
@@ -560,7 +665,16 @@ a:focus, button:focus {
   }
   
   .readme-content {
-    padding: 1rem;
+    padding: 1.5rem;
     font-size: 0.9rem;
+    max-height: 300px;
+  }
+  
+  .readme-content h1 {
+    font-size: 1.4rem;
+  }
+  
+  .readme-content h2 {
+    font-size: 1.2rem;
   }
 }

@@ -62,7 +62,7 @@ document.querySelectorAll('.section, .hero, .footer').forEach(el => {
 // GitHub API Integration
 const GITHUB_USERNAME = 'sonbarse17';
 const GITHUB_API = `https://api.github.com/users/${GITHUB_USERNAME}`;
-const GITHUB_REPOS_API = `https://api.github.com/users/${GITHUB_USERNAME}/repos`;
+const GITHUB_PINNED_API = `https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=100`;
 const GITHUB_README_API = `https://api.github.com/repos/${GITHUB_USERNAME}/${GITHUB_USERNAME}/readme`;
 
 async function fetchGitHubData() {
@@ -75,9 +75,17 @@ async function fetchGitHubData() {
     document.getElementById('follower-count').textContent = userData.followers;
     document.getElementById('following-count').textContent = userData.following;
     
-    // Fetch repositories
-    const reposResponse = await fetch(GITHUB_REPOS_API + '?sort=updated&per_page=6');
-    const reposData = await reposResponse.json();
+    // Fetch repositories and filter pinned ones
+    const reposResponse = await fetch(GITHUB_PINNED_API);
+    const allRepos = await reposResponse.json();
+    
+    // Get pinned repositories (starred by user or with high activity)
+    const pinnedRepos = allRepos
+      .filter(repo => !repo.fork && (repo.stargazers_count > 0 || repo.name.includes('portfolio') || repo.name.includes('project')))
+      .slice(0, 6);
+    
+    // If no pinned repos found, get most recent non-fork repos
+    const reposData = pinnedRepos.length > 0 ? pinnedRepos : allRepos.filter(repo => !repo.fork).slice(0, 6);
     
     const reposList = document.getElementById('repos-list');
     reposList.innerHTML = reposData.map(repo => `
@@ -92,22 +100,74 @@ async function fetchGitHubData() {
       </div>
     `).join('');
     
-    // Fetch README
-    try {
-      const readmeResponse = await fetch(GITHUB_README_API);
-      const readmeData = await readmeResponse.json();
-      const readmeContent = atob(readmeData.content);
-      
-      document.getElementById('github-readme').innerHTML = `
-        <h4>GitHub README</h4>
-        <div class="readme-content">${markdownToHtml(readmeContent)}</div>
-      `;
-    } catch (error) {
-      document.getElementById('github-readme').innerHTML = `
-        <h4>GitHub README</h4>
-        <p>README not found or not accessible.</p>
-      `;
-    }
+    // Use provided README content
+    const readmeContent = `<h1 align="center">Hey Everyone 👋, I'm Sushant Sonbarse</h1>
+
+<div align="center">
+  <img src="https://github.com/sonbarse17/sonbarse17/blob/main/banner.png" alt="DevOps Banner">
+</div>
+
+<h3 align="center">A passionate DevOps Engineer from India. I work in the Corporate IT Sector</h3>
+
+<p align="center">
+  <a href="https://github.com/sonbarse17">
+    <img src="https://img.shields.io/github/followers/sonbarse17?label=Follow&style=social" />
+  </a>
+  <a href="https://linkedin.com/in/sushant-sonbarse">
+    <img src="https://img.shields.io/badge/LinkedIn-Sushant%20Sonbarse-blue?logo=linkedin&style=flat-square" />
+  </a>
+</p>
+
+<img align="right" alt="Coding" width="400" src="https://raw.githubusercontent.com/devSouvik/devSouvik/master/gif3.gif">
+
+<p align="left">
+  <img src="https://komarev.com/ghpvc/?username=sonbarse17&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
+</p>
+
+- 👨‍💻 All of my projects are available at [https://github.com/sonbarse17](https://github.com/sonbarse17)
+- 💬 Ask me about **DevOps & Cloud DevOps**
+- 📫 How to reach me **sushantsonbarse07@gmail.com**
+
+---
+
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+  <a href="https://linkedin.com/in/sushant-sonbarse" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" /></a>
+  <a href="https://instagram.com/sushant_sonbarse_" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="Instagram" height="30" width="40" /></a>
+</p>
+
+---
+
+<h3 align="left">Languages and Tools:</h3>
+<p align="left">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="40" height="40"/>
+  <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" width="40" height="40"/>
+  <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" width="40" height="40"/>
+  <img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" width="40" height="40"/>
+  <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="40" height="40"/>
+</p>
+
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=sonbarse17&show_icons=true&locale=en&layout=compact&theme=vue&hide_border=true" alt="Top Langs" /></p>
+
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=sonbarse17&show_icons=true&locale=en&theme=vue&hide_border=true" alt="GitHub Stats" /></p>
+
+---
+
+### 👨‍💼 About Me & 🤝 Open to Collaborations
+
+🤝 Open to **Project Collaborations**
+💼 Offering **DevOps Consulting / Mentorship**
+📧 Let's chat: [sushantsonbarse07@gmail.com](mailto:sushantsonbarse07@gmail.com)
+
+> *"Helping people crack DevOps with real-world knowledge. Let's build and automate the future, one pipeline at a time!"*`;
+    
+    document.getElementById('github-readme').innerHTML = `
+      <h4>📋 GitHub Profile README</h4>
+      <div class="readme-content">${readmeContent}</div>
+    `;
     
   } catch (error) {
     console.error('Error fetching GitHub data:', error);
