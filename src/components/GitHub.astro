@@ -288,12 +288,12 @@
       const reposList = document.getElementById('repos-list');
       reposList.innerHTML = filteredRepos.map(repo => `
         <div class="repo-card">
-          <h5><a href="${repo.html_url}" target="_blank">${repo.name}</a></h5>
-          <p>${repo.description || 'No description available'}</p>
+          <h5><a href="${repo.html_url}" target="_blank" style="color: #3b82f6 !important;">${repo.name}</a></h5>
+          <p style="color: inherit !important;">${repo.description || 'No description available'}</p>
           <div class="repo-stats">
-            <span>⭐ ${repo.stargazers_count}</span>
-            <span>🍴 ${repo.forks_count}</span>
-            ${repo.language ? `<span>💻 ${repo.language}</span>` : ''}
+            <span style="color: inherit !important;">⭐ ${repo.stargazers_count}</span>
+            <span style="color: inherit !important;">🍴 ${repo.forks_count}</span>
+            ${repo.language ? `<span style="color: inherit !important;">💻 ${repo.language}</span>` : ''}
           </div>
         </div>
       `).join('');
