@@ -25,14 +25,14 @@ const { title, description = "Portfolio of Sushant Sonbarse, DevOps Engineer spe
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 </head>
-<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+<body class="bg-black text-white transition-colors duration-300">
   <!-- Header -->
-  <header class="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-700">
+  <header class="fixed top-0 w-full bg-black/90 backdrop-blur-md z-50 border-b border-gray-800">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold text-primary-600 dark:text-primary-400">Sushant Sonbarse</h1>
+      <h1 class="text-xl font-bold text-blue-400">Sushant Sonbarse</h1>
       <button 
         @click="darkMode = !darkMode; localStorage.setItem('darkMode', darkMode)"
-        class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+        class="p-2 rounded-lg bg-gray-900 hover:bg-gray-800 transition-colors"
         aria-label="Toggle Dark Mode"
       >
         <span x-show="!darkMode">🌙</span>
@@ -46,8 +46,8 @@ const { title, description = "Portfolio of Sushant Sonbarse, DevOps Engineer spe
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-50 dark:bg-gray-800 py-8 mt-16">
-    <div class="container mx-auto px-6 text-center text-gray-600 dark:text-gray-400">
+  <footer class="bg-gray-900 py-8 mt-16">
+    <div class="container mx-auto px-6 text-center text-gray-400">
       <p>&copy; 2025 Sushant Sonbarse. All rights reserved.</p>
     </div>
   </footer>

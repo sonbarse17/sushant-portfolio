@@ -21,30 +21,30 @@ const projects = [
 ];
 ---
 
-<section id="projects" class="py-20 bg-white dark:bg-gray-900">
+<section id="projects" class="py-20 bg-black">
   <div class="container mx-auto px-6">
     <div class="text-center mb-16 animate-slide-up">
-      <h2 class="text-4xl font-bold mb-4 text-gray-900 dark:text-white">Featured Projects</h2>
-      <p class="text-lg text-gray-600 dark:text-gray-300">Real-world DevOps implementations and solutions</p>
+      <h2 class="text-4xl font-bold mb-4 text-white">Featured Projects</h2>
+      <p class="text-lg text-gray-300">Real-world DevOps implementations and solutions</p>
     </div>
     
     <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto">
       {projects.map((project, index) => (
         <div 
-          class="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group animate-slide-up"
+          class="bg-gray-900 border border-gray-800 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group animate-slide-up"
           style={`animation-delay: ${index * 0.2}s`}
         >
-          <h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+          <h3 class="text-xl font-bold mb-4 text-white group-hover:text-blue-400 transition-colors">
             {project.title}
           </h3>
           
-          <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+          <p class="text-gray-300 mb-6 leading-relaxed">
             {project.description}
           </p>
           
           <div class="flex flex-wrap gap-2 mb-6">
             {project.technologies.map((tech) => (
-              <span class="bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 px-3 py-1 rounded-full text-sm font-medium">
+              <span class="bg-gray-800 text-blue-300 px-3 py-1 rounded-full text-sm font-medium">
                 {tech}
               </span>
             ))}
@@ -52,7 +52,7 @@ const projects = [
           
           <a 
             href={project.link}
-            class="inline-flex items-center text-primary-600 dark:text-primary-400 font-semibold hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
+            class="inline-flex items-center text-blue-400 font-semibold hover:text-blue-300 transition-colors"
           >
             View Details 
             <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
