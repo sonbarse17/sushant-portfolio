@@ -130,21 +130,23 @@
       const reposResponse = await fetch(GITHUB_REPOS_API);
       const allRepos = await reposResponse.json();
       
+      // Get pinned repositories (fallback to top repos if no pinned)
+      const pinnedRepos = [
+        'sushant-portfolio',
+        'DevOps-Projects',
+        'AWS-Infrastructure',
+        'Kubernetes-Deployment',
+        'CI-CD-Pipeline',
+        'Terraform-Modules'
+      ];
+      
       const filteredRepos = allRepos
-        .filter(repo => !repo.fork)
-        .sort((a, b) => {
-          const aScore = (a.stargazers_count * 3) + (a.forks_count * 2) + 
-                        (a.name.toLowerCase().includes('devops') ? 10 : 0) +
-                        (a.name.toLowerCase().includes('portfolio') ? 15 : 0) +
-                        (a.name.toLowerCase().includes('project') ? 8 : 0);
-          
-          const bScore = (b.stargazers_count * 3) + (b.forks_count * 2) + 
-                        (b.name.toLowerCase().includes('devops') ? 10 : 0) +
-                        (b.name.toLowerCase().includes('portfolio') ? 15 : 0) +
-                        (b.name.toLowerCase().includes('project') ? 8 : 0);
-          
-          return bScore - aScore;
-        })
+        .filter(repo => !repo.fork && pinnedRepos.includes(repo.name))
+        .concat(
+          allRepos
+            .filter(repo => !repo.fork && !pinnedRepos.includes(repo.name))
+            .sort((a, b) => b.stargazers_count - a.stargazers_count)
+        )
         .slice(0, 6);
       
       const reposList = document.getElementById('repos-list');
