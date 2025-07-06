@@ -59,19 +59,19 @@ const skills = [
 ];
 ---
 
-<section id="skills" class="py-20 bg-gradient-to-b from-gray-900 via-black to-gray-900 relative overflow-hidden">
+<section id="skills" class="py-20 relative overflow-hidden transition-colors duration-300" :class="lightMode ? 'bg-gradient-to-b from-gray-50 via-white to-gray-50' : 'bg-gradient-to-b from-gray-900 via-black to-gray-900'">
   <!-- Background pattern -->
   <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f2937_1px,transparent_1px),linear-gradient(to_bottom,#1f2937_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20"></div>
   <div class="container mx-auto px-4 sm:px-6 relative z-10">
     <div class="text-center mb-16 animate-slide-up">
-      <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-white">Skills & Technologies</h2>
-      <p class="text-lg text-gray-300">Technologies I work with to build scalable solutions</p>
+      <h2 class="text-3xl sm:text-4xl font-bold mb-4 transition-colors duration-300" :class="lightMode ? 'text-gray-900' : 'text-white'">Skills & Technologies</h2>
+      <p class="text-lg transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-300'">Technologies I work with to build scalable solutions</p>
     </div>
     
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
       {skills.map((skill, index) => (
         <div 
-          class="group relative bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-sm border border-gray-800/50 rounded-xl p-6 shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-3 hover:border-blue-500/30 animate-slide-up overflow-hidden"
+          class="group relative backdrop-blur-sm border rounded-xl p-6 shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-3 animate-slide-up overflow-hidden" :class="lightMode ? 'bg-gradient-to-br from-white/80 to-gray-50/80 border-gray-200/50 hover:border-blue-500/30' : 'bg-gradient-to-br from-gray-900/80 to-black/80 border-gray-800/50 hover:border-blue-500/30'"
           style={`animation-delay: ${index * 0.1}s`}
         >
           <!-- Glow effect -->
@@ -79,10 +79,10 @@ const skills = [
           
           <div class="relative z-10">
             <div class="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">{skill.icon}</div>
-            <h3 class="text-xl font-semibold mb-4 text-white group-hover:text-blue-400 transition-colors duration-300">{skill.category}</h3>
+            <h3 class="text-xl font-semibold mb-4 group-hover:text-blue-400 transition-colors duration-300" :class="lightMode ? 'text-gray-900' : 'text-white'">{skill.category}</h3>
             <div class="flex flex-wrap gap-2">
             {skill.items.map((item) => (
-              <span class="bg-gray-800/80 backdrop-blur-sm text-blue-300 px-3 py-1.5 rounded-full text-sm font-medium inline-flex items-center justify-center gap-2 border border-gray-700/50 hover:border-blue-500/50 hover:bg-blue-500/10 transition-all duration-300 min-h-[32px]">
+              <span class="backdrop-blur-sm px-3 py-1.5 rounded-full text-sm font-medium inline-flex items-center justify-center gap-2 border hover:border-blue-500/50 hover:bg-blue-500/10 transition-all duration-300 min-h-[32px]" :class="lightMode ? 'bg-gray-100/80 text-blue-600 border-gray-300/50' : 'bg-gray-800/80 text-blue-300 border-gray-700/50'">
                 {typeof item === 'string' ? (
                   item
                 ) : (
