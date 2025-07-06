@@ -25,19 +25,20 @@ const { title, description = "Portfolio of Sushant Sonbarse, DevOps Engineer spe
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/sushant-portfolio/favicon.svg" />
 </head>
-<body class="bg-black text-white transition-colors duration-300">
+<body class="bg-black text-white transition-colors duration-300" :class="lightMode ? 'bg-white text-gray-900' : 'bg-black text-white'">
   <!-- Header -->
-  <header class="fixed top-0 w-full bg-black/80 backdrop-blur-xl z-50 border-b border-gray-800/50 shadow-2xl">
+  <header class="fixed top-0 w-full backdrop-blur-xl z-50 border-b shadow-2xl transition-colors duration-300" :class="lightMode ? 'bg-white/80 border-gray-200/50' : 'bg-black/80 border-gray-800/50'">
     <nav class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
-      <h1 class="text-lg sm:text-xl font-bold text-blue-400">Sushant Sonbarse</h1>
+      <h1 class="text-lg sm:text-xl font-bold transition-colors duration-300" :class="lightMode ? 'text-blue-600' : 'text-blue-400'">Sushant Sonbarse</h1>
       <button 
         @click="lightMode = !lightMode; localStorage.setItem('lightMode', lightMode)"
-        class="group relative p-3 rounded-xl bg-gradient-to-r from-gray-900/80 to-gray-800/80 backdrop-blur-sm border border-gray-700/50 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-blue-500/20"
-        aria-label="Toggle Light Mode"
+        class="group relative p-2 sm:p-3 rounded-xl backdrop-blur-sm border transition-all duration-300 hover:scale-105 shadow-lg"
+        :class="lightMode ? 'bg-gradient-to-r from-gray-100/80 to-gray-200/80 border-gray-300/50 hover:border-blue-500/50 hover:shadow-blue-500/20' : 'bg-gradient-to-r from-gray-900/80 to-gray-800/80 border-gray-700/50 hover:border-blue-500/50 hover:shadow-blue-500/20'"
+        aria-label="Toggle Theme"
       >
         <div class="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        <span x-show="!lightMode" class="relative text-blue-400 text-lg">☀️</span>
-        <span x-show="lightMode" class="relative text-purple-400 text-lg">🌙</span>
+        <span x-show="!lightMode" class="relative text-blue-400 text-base sm:text-lg">☀️</span>
+        <span x-show="lightMode" class="relative text-purple-600 text-base sm:text-lg">🌙</span>
       </button>
     </nav>
   </header>
@@ -47,8 +48,8 @@ const { title, description = "Portfolio of Sushant Sonbarse, DevOps Engineer spe
   </main>
 
   <!-- Footer -->
-  <footer class="bg-black py-6 sm:py-8 mt-12 sm:mt-16">
-    <div class="container mx-auto px-4 sm:px-6 text-center text-gray-500">
+  <footer class="py-6 sm:py-8 mt-12 sm:mt-16 transition-colors duration-300" :class="lightMode ? 'bg-gray-100' : 'bg-black'">
+    <div class="container mx-auto px-4 sm:px-6 text-center transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-500'">
       <p class="text-sm sm:text-base">&copy; 2025 Sushant Sonbarse. All rights reserved.</p>
     </div>
   </footer>
