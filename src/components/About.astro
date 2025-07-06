@@ -6,7 +6,12 @@
     <div class="max-w-4xl mx-auto text-center animate-slide-up">
       <h2 class="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-white">About Me</h2>
       
-      <div class="bg-gray-900 border border-gray-800 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-12 shadow-lg">
+      <div class="relative bg-gradient-to-br from-gray-900/90 to-black/90 backdrop-blur-xl border border-gray-800/50 rounded-2xl p-6 sm:p-8 md:p-12 shadow-2xl overflow-hidden">
+        <!-- Animated background elements -->
+        <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 rounded-full blur-2xl"></div>
+        <div class="absolute bottom-0 left-0 w-40 h-40 bg-purple-500/5 rounded-full blur-2xl"></div>
+        
+        <div class="relative z-10">
         <p class="text-lg leading-relaxed text-gray-300 mb-6">
           DevOps Engineer with <span class="font-semibold text-blue-400">9 months</span> of hands-on experience in orchestration, containerization, and CI/CD implementation.
         </p>
@@ -21,7 +26,7 @@
         </p>
         
         <!-- Education & Certifications -->
-        <div class="bg-black border border-gray-700 rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-md">
+        <div class="bg-gradient-to-r from-black/80 to-gray-900/80 backdrop-blur-sm border border-gray-700/50 rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300">
           <h3 class="text-xl font-semibold mb-4 text-white flex items-center">
             <svg class="w-6 h-6 mr-2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
@@ -54,6 +59,7 @@
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>

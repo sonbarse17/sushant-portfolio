@@ -59,8 +59,10 @@ const skills = [
 ];
 ---
 
-<section id="skills" class="py-20 bg-gray-900">
-  <div class="container mx-auto px-4 sm:px-6">
+<section id="skills" class="py-20 bg-gradient-to-b from-gray-900 via-black to-gray-900 relative overflow-hidden">
+  <!-- Background pattern -->
+  <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f2937_1px,transparent_1px),linear-gradient(to_bottom,#1f2937_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20"></div>
+  <div class="container mx-auto px-4 sm:px-6 relative z-10">
     <div class="text-center mb-16 animate-slide-up">
       <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-white">Skills & Technologies</h2>
       <p class="text-lg text-gray-300">Technologies I work with to build scalable solutions</p>
@@ -69,14 +71,18 @@ const skills = [
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
       {skills.map((skill, index) => (
         <div 
-          class="bg-black border border-gray-800 rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-slide-up"
+          class="group relative bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-sm border border-gray-800/50 rounded-xl p-6 shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-3 hover:border-blue-500/30 animate-slide-up overflow-hidden"
           style={`animation-delay: ${index * 0.1}s`}
         >
-          <div class="text-3xl mb-4">{skill.icon}</div>
-          <h3 class="text-xl font-semibold mb-4 text-white">{skill.category}</h3>
-          <div class="flex flex-wrap gap-2">
+          <!-- Glow effect -->
+          <div class="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
+          
+          <div class="relative z-10">
+            <div class="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">{skill.icon}</div>
+            <h3 class="text-xl font-semibold mb-4 text-white group-hover:text-blue-400 transition-colors duration-300">{skill.category}</h3>
+            <div class="flex flex-wrap gap-2">
             {skill.items.map((item) => (
-              <span class="bg-gray-800 text-blue-300 px-3 py-1 rounded-full text-sm font-medium flex items-center gap-2">
+              <span class="bg-gray-800/80 backdrop-blur-sm text-blue-300 px-3 py-1.5 rounded-full text-sm font-medium flex items-center gap-2 border border-gray-700/50 hover:border-blue-500/50 hover:bg-blue-500/10 transition-all duration-300">
                 {typeof item === 'string' ? (
                   item
                 ) : (
@@ -91,6 +97,7 @@ const skills = [
                 )}
               </span>
             ))}
+            </div>
           </div>
         </div>
       ))}
