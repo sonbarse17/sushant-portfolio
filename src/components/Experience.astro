@@ -1,0 +1,154 @@
+---
+const experiences = [
+  {
+    title: "DevOps Engineer",
+    company: "Tech Solutions",
+    duration: "2024 - Present",
+    description: "Implemented CI/CD pipelines, managed Kubernetes clusters, and automated infrastructure deployment using Terraform.",
+    technologies: ["AWS", "Kubernetes", "Docker", "Jenkins", "Terraform"],
+    achievements: [
+      "Reduced deployment time by 85%",
+      "Automated 35 microservices deployment",
+      "Implemented monitoring with EFK stack"
+    ]
+  }
+];
+---
+
+<section id="experience" class="py-20 bg-gray-900">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16 animate-slide-up">
+      <h2 class="text-4xl font-bold mb-4 text-white">Experience</h2>
+      <p class="text-lg text-gray-300">My professional journey in DevOps</p>
+    </div>
+    
+    <div class="max-w-6xl mx-auto">
+      <!-- Workflow Diagram -->
+      <div class="mb-16 animate-slide-up">
+        <h3 class="text-2xl font-bold mb-8 text-white text-center">DevOps Workflow</h3>
+        <div class="bg-black border border-gray-800 rounded-xl p-8 overflow-x-auto">
+          <div class="flex items-center justify-between min-w-[800px]">
+            <!-- Plan -->
+            <div class="flex flex-col items-center">
+              <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-3">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                </svg>
+              </div>
+              <span class="text-white font-semibold">Plan</span>
+            </div>
+            
+            <!-- Arrow -->
+            <div class="text-gray-400">→</div>
+            
+            <!-- Code -->
+            <div class="flex flex-col items-center">
+              <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mb-3">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                </svg>
+              </div>
+              <span class="text-white font-semibold">Code</span>
+            </div>
+            
+            <!-- Arrow -->
+            <div class="text-gray-400">→</div>
+            
+            <!-- Build -->
+            <div class="flex flex-col items-center">
+              <div class="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center mb-3">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                </svg>
+              </div>
+              <span class="text-white font-semibold">Build</span>
+            </div>
+            
+            <!-- Arrow -->
+            <div class="text-gray-400">→</div>
+            
+            <!-- Test -->
+            <div class="flex flex-col items-center">
+              <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mb-3">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <span class="text-white font-semibold">Test</span>
+            </div>
+            
+            <!-- Arrow -->
+            <div class="text-gray-400">→</div>
+            
+            <!-- Deploy -->
+            <div class="flex flex-col items-center">
+              <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mb-3">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                </svg>
+              </div>
+              <span class="text-white font-semibold">Deploy</span>
+            </div>
+            
+            <!-- Arrow -->
+            <div class="text-gray-400">→</div>
+            
+            <!-- Monitor -->
+            <div class="flex flex-col items-center">
+              <div class="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center mb-3">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                </svg>
+              </div>
+              <span class="text-white font-semibold">Monitor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Experience Timeline -->
+      <div class="animate-slide-up" style="animation-delay: 0.2s">
+        {experiences.map((exp, index) => (
+          <div class="bg-black border border-gray-800 rounded-xl p-8 shadow-lg">
+            <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
+              <div>
+                <h3 class="text-2xl font-bold text-white mb-2">{exp.title}</h3>
+                <p class="text-xl text-blue-400 mb-2">{exp.company}</p>
+                <p class="text-gray-400">{exp.duration}</p>
+              </div>
+            </div>
+            
+            <p class="text-gray-300 mb-6 leading-relaxed">{exp.description}</p>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div>
+                <h4 class="text-lg font-semibold text-white mb-4">Key Achievements</h4>
+                <ul class="space-y-2">
+                  {exp.achievements.map((achievement) => (
+                    <li class="flex items-start">
+                      <svg class="w-5 h-5 text-green-400 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span class="text-gray-300">{achievement}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              
+              <div>
+                <h4 class="text-lg font-semibold text-white mb-4">Technologies Used</h4>
+                <div class="flex flex-wrap gap-2">
+                  {exp.technologies.map((tech) => (
+                    <span class="bg-gray-800 text-blue-300 px-3 py-1 rounded-full text-sm font-medium">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
