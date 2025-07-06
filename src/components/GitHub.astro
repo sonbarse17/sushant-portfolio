@@ -125,11 +125,11 @@
   }
   
   .light #github-readme h3 {
-    @apply text-gray-900;
+    @apply text-gray-900 !important;
   }
   
   :not(.light) #github-readme h3 {
-    @apply text-white;
+    @apply text-white !important;
   }
   
   #github-readme p {
@@ -137,11 +137,23 @@
   }
   
   .light #github-readme p {
-    @apply text-gray-600;
+    @apply text-gray-700 !important;
   }
   
   :not(.light) #github-readme p {
-    @apply text-gray-300;
+    @apply text-gray-300 !important;
+  }
+  
+  #github-readme strong {
+    @apply font-semibold;
+  }
+  
+  .light #github-readme strong {
+    @apply text-gray-900 !important;
+  }
+  
+  :not(.light) #github-readme strong {
+    @apply text-white !important;
   }
   
   #github-readme img {
@@ -157,11 +169,23 @@
   }
   
   .light #github-readme ul {
-    @apply text-gray-600;
+    @apply text-gray-700 !important;
   }
   
   :not(.light) #github-readme ul {
-    @apply text-gray-300;
+    @apply text-gray-300 !important;
+  }
+  
+  #github-readme li {
+    @apply mb-2;
+  }
+  
+  .light #github-readme li {
+    @apply text-gray-700 !important;
+  }
+  
+  :not(.light) #github-readme li {
+    @apply text-gray-300 !important;
   }
   
   #github-readme blockquote {
@@ -169,11 +193,11 @@
   }
   
   .light #github-readme blockquote {
-    @apply text-gray-600 bg-gray-100;
+    @apply text-gray-700 bg-gray-100 !important;
   }
   
   :not(.light) #github-readme blockquote {
-    @apply text-gray-400 bg-gray-800;
+    @apply text-gray-400 bg-gray-800 !important;
   }
 </style>
 
