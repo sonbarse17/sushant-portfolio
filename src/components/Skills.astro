@@ -60,16 +60,16 @@ const skills = [
 ---
 
 <section id="skills" class="py-20 bg-gray-900">
-  <div class="container mx-auto px-6">
+  <div class="container mx-auto px-4 sm:px-6">
     <div class="text-center mb-16 animate-slide-up">
-      <h2 class="text-4xl font-bold mb-4 text-white">Skills & Technologies</h2>
+      <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-white">Skills & Technologies</h2>
       <p class="text-lg text-gray-300">Technologies I work with to build scalable solutions</p>
     </div>
     
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
       {skills.map((skill, index) => (
         <div 
-          class="bg-black border border-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-slide-up"
+          class="bg-black border border-gray-800 rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-slide-up"
           style={`animation-delay: ${index * 0.1}s`}
         >
           <div class="text-3xl mb-4">{skill.icon}</div>

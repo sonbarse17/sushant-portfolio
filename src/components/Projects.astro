@@ -22,16 +22,16 @@ const projects = [
 ---
 
 <section id="projects" class="py-20 bg-black">
-  <div class="container mx-auto px-6">
+  <div class="container mx-auto px-4 sm:px-6">
     <div class="text-center mb-16 animate-slide-up">
-      <h2 class="text-4xl font-bold mb-4 text-white">Featured Projects</h2>
+      <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-white">Featured Projects</h2>
       <p class="text-lg text-gray-300">Real-world DevOps implementations and solutions</p>
     </div>
     
-    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
       {projects.map((project, index) => (
         <div 
-          class="group relative bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-2xl p-8 shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-3 hover:border-blue-500/50 animate-slide-up overflow-hidden"
+          class="group relative bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-3 hover:border-blue-500/50 animate-slide-up overflow-hidden"
           style={`animation-delay: ${index * 0.2}s`}
         >
           <!-- Gradient overlay -->
