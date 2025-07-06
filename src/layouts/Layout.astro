@@ -28,8 +28,8 @@ const { title, description = "Portfolio of Sushant Sonbarse, DevOps Engineer spe
 <body class="bg-black text-white transition-colors duration-300">
   <!-- Header -->
   <header class="fixed top-0 w-full bg-black/90 backdrop-blur-md z-50 border-b border-gray-800">
-    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold text-blue-400">Sushant Sonbarse</h1>
+    <nav class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+      <h1 class="text-lg sm:text-xl font-bold text-blue-400">Sushant Sonbarse</h1>
       <button 
         @click="lightMode = !lightMode; localStorage.setItem('lightMode', lightMode)"
         class="p-2 rounded-lg bg-gray-900 hover:bg-gray-800 transition-colors"
@@ -41,14 +41,14 @@ const { title, description = "Portfolio of Sushant Sonbarse, DevOps Engineer spe
     </nav>
   </header>
 
-  <main class="pt-20">
+  <main class="pt-16 sm:pt-20">
     <slot />
   </main>
 
   <!-- Footer -->
-  <footer class="bg-black py-8 mt-16">
-    <div class="container mx-auto px-6 text-center text-gray-500">
-      <p>&copy; 2025 Sushant Sonbarse. All rights reserved.</p>
+  <footer class="bg-black py-6 sm:py-8 mt-12 sm:mt-16">
+    <div class="container mx-auto px-4 sm:px-6 text-center text-gray-500">
+      <p class="text-sm sm:text-base">&copy; 2025 Sushant Sonbarse. All rights reserved.</p>
     </div>
   </footer>
 
