@@ -32,8 +32,7 @@ const { title, description = "Portfolio of Sushant Sonbarse, DevOps Engineer spe
       <h1 class="text-lg sm:text-xl font-bold transition-colors duration-300" :class="lightMode ? 'text-blue-600' : 'text-blue-400'">Sushant Sonbarse</h1>
       <div class="flex items-center gap-4">
         <div class="text-sm transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-400'">
-          <span class="font-medium">Portfolio Visits:</span> 
-          <img src="https://komarev.com/ghpvc/?username=sonbarse17&repo=sushant-portfolio&style=flat-square&color=blue&label=" alt="Portfolio Visits" class="inline-block ml-1" />
+          <span class="font-medium">Portfolio Views:</span> <span id="traffic-count" class="text-blue-400 font-bold">-</span>
         </div>
         <button 
           @click="lightMode = !lightMode; localStorage.setItem('lightMode', lightMode)"
@@ -65,15 +64,24 @@ const { title, description = "Portfolio of Sushant Sonbarse, DevOps Engineer spe
   
   <!-- Visit Counter & Smooth scroll -->
   <script>
-    // Portfolio visit counter
-    function updateVisitCount() {
-      // The Komarev counter in the header will handle the actual counting
-      // This function can be used for additional analytics if needed
-      console.log('Portfolio visited at:', new Date().toISOString());
+    // GitHub Pages traffic counter from JSON file
+    async function fetchGitHubTraffic() {
+      try {
+        const response = await fetch('/sushant-portfolio/traffic.json');
+        if (response.ok) {
+          const data = await response.json();
+          document.getElementById('traffic-count').textContent = data.views || 0;
+        } else {
+          document.getElementById('traffic-count').textContent = 'N/A';
+        }
+      } catch (error) {
+        console.error('Failed to fetch traffic data:', error);
+        document.getElementById('traffic-count').textContent = 'N/A';
+      }
     }
     
-    // Initialize visit count on page load
-    document.addEventListener('DOMContentLoaded', updateVisitCount);
+    // Initialize traffic count on page load
+    document.addEventListener('DOMContentLoaded', fetchGitHubTraffic);
     
     // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
