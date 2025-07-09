@@ -32,7 +32,8 @@ const { title, description = "Portfolio of Sushant Sonbarse, DevOps Engineer spe
       <h1 class="text-lg sm:text-xl font-bold transition-colors duration-300" :class="lightMode ? 'text-blue-600' : 'text-blue-400'">Sushant Sonbarse</h1>
       <div class="flex items-center gap-4">
         <div class="text-sm transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-400'">
-          <span class="font-medium">Visits:</span> <span id="visit-count" class="text-blue-400 font-bold">-</span>
+          <span class="font-medium">Visits:</span> 
+          <img src="https://komarev.com/ghpvc/?username=sonbarse17&style=flat-square&color=blue&label=" alt="Visitor Count" class="inline-block ml-1" />
         </div>
         <button 
           @click="lightMode = !lightMode; localStorage.setItem('lightMode', lightMode)"
@@ -64,8 +65,8 @@ const { title, description = "Portfolio of Sushant Sonbarse, DevOps Engineer spe
   
   <!-- Visit Counter & Smooth scroll -->
   <script>
-    // Visit counter
-    function updateVisitCount() {
+    // Visit counter with GitHub Pages traffic
+    async function updateVisitCount() {
       const visitKey = 'portfolio-visits';
       let visits = localStorage.getItem(visitKey);
       
@@ -76,7 +77,20 @@ const { title, description = "Portfolio of Sushant Sonbarse, DevOps Engineer spe
       }
       
       localStorage.setItem(visitKey, visits);
-      document.getElementById('visit-count').textContent = visits;
+      
+      // Try to fetch GitHub Pages traffic (requires GitHub token)
+      try {
+        // This would require a GitHub personal access token and CORS proxy
+        // For now, use the Komarev counter as fallback
+        const response = await fetch('https://komarev.com/ghpvc/?username=sonbarse17&style=flat-square&color=blue');
+        if (response.ok) {
+          // Extract count from response if possible
+          document.getElementById('visit-count').textContent = visits + ' (Local)';
+        }
+      } catch (error) {
+        // Fallback to local storage count
+        document.getElementById('visit-count').textContent = visits;
+      }
     }
     
     // Initialize visit count on page load
