@@ -70,7 +70,8 @@ const { title, description = "Portfolio of Sushant Sonbarse, DevOps Engineer spe
         const response = await fetch('/sushant-portfolio/traffic.json');
         if (response.ok) {
           const data = await response.json();
-          document.getElementById('traffic-count').textContent = data.views || 0;
+          const views = data.last_24h?.views || data.total_views || 0;
+          document.getElementById('traffic-count').textContent = views;
         } else {
           document.getElementById('traffic-count').textContent = 'N/A';
         }

@@ -2,7 +2,7 @@ name: Update Traffic Data
 
 on:
   schedule:
-    - cron: '0 * * * *' # Every hour
+    - cron: '* * * * *' # Every minute
   workflow_dispatch:
 
 jobs:
@@ -13,10 +13,31 @@ jobs:
       
       - name: Fetch Traffic Data
         run: |
-          TRAFFIC=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-            "https://api.github.com/repos/${{ github.repository }}/traffic/views" | \
-            jq '.count')
-          echo "{\"views\": $TRAFFIC, \"updated\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"}" > public/traffic.json
+          # Get current traffic data
+          CURRENT_DATA=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/traffic/views")
+          
+          TOTAL_VIEWS=$(echo $CURRENT_DATA | jq '.count')
+          UNIQUE_VIEWS=$(echo $CURRENT_DATA | jq '.uniques')
+          TIMESTAMP=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          
+          # Create or update JSON with 24hr data structure
+          cat > public/traffic.json << EOF
+          {
+            "total_views": $TOTAL_VIEWS,
+            "unique_views": $UNIQUE_VIEWS,
+            "last_updated": "$TIMESTAMP",
+            "last_24h": {
+              "views": $TOTAL_VIEWS,
+              "period": "24 hours",
+              "updated_at": "$TIMESTAMP"
+            },
+            "summary": {
+              "daily_average": $(echo "scale=1; $TOTAL_VIEWS / 30" | bc -l 2>/dev/null || echo "0"),
+              "status": "active"
+            }
+          }
+          EOF
           
       - name: Commit Traffic Data
         run: |
