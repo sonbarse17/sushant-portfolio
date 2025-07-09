@@ -55,11 +55,36 @@ const projects = [
             </p>
             
             <div class="flex flex-wrap gap-2 mb-8">
-              {project.technologies.map((tech) => (
-                <span class="backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium border hover:border-blue-500/50 transition-colors duration-300" :class="lightMode ? 'bg-gray-100/80 text-blue-600 border-gray-300/50' : 'bg-gray-800/80 text-blue-300 border-gray-700/50'">
-                  {tech}
-                </span>
-              ))}
+              {project.technologies.map((tech) => {
+                const techIcons = {
+                  'Jenkins': '/sushant-portfolio/icons/jenkins.png',
+                  'Docker': '/sushant-portfolio/icons/docker.png',
+                  'Kubernetes': '/sushant-portfolio/icons/kubernetes.png',
+                  'Helm': '/sushant-portfolio/icons/helm.png',
+                  'Python': '/sushant-portfolio/icons/python.svg',
+                  'AWS': '/sushant-portfolio/icons/aws.png',
+                  'Lambda': '/sushant-portfolio/icons/aws.png',
+                  'S3': '/sushant-portfolio/icons/aws.png',
+                  'CloudFront': '/sushant-portfolio/icons/aws.png',
+                  'Angular': '🅰️',
+                  'Spring Boot': '🍃',
+                  'Terraform': '/sushant-portfolio/icons/terraform.png',
+                  'AWS EKS': '/sushant-portfolio/icons/kubernetes.png',
+                  'EFK Stack': '📊'
+                };
+                return (
+                  <span class="backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium border hover:border-blue-500/50 transition-colors duration-300 inline-flex items-center gap-2" :class="lightMode ? 'bg-gray-100/80 text-blue-600 border-gray-300/50' : 'bg-gray-800/80 text-blue-300 border-gray-700/50'">
+                    <div class="flex-shrink-0 inline-flex items-center justify-center" style="width: 14px; height: 14px;">
+                      {techIcons[tech] && (techIcons[tech].endsWith('.png') || techIcons[tech].endsWith('.svg')) ? (
+                        <img src={techIcons[tech]} alt={tech} class="object-contain" style="width: 14px; height: 14px;" />
+                      ) : (
+                        <span style="font-size: 12px; line-height: 1;">{techIcons[tech] || '🔧'}</span>
+                      )}
+                    </div>
+                    <span class="whitespace-nowrap">{tech}</span>
+                  </span>
+                );
+              })}
             </div>
             
             <div class="flex items-center justify-between">
