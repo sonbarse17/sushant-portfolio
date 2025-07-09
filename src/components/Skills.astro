@@ -88,9 +88,9 @@ const skills = [
                 ) : (
                   <>
                     {item.icon.endsWith('.svg') ? (
-                      <img src={item.icon} alt={item.name} class="w-4 h-4 flex-shrink-0" />
+                      <img src={item.icon} alt={item.name} class="flex-shrink-0 object-contain" style="width: 16px; height: 16px;" />
                     ) : (
-                      <span class="flex-shrink-0">{item.icon}</span>
+                      <span class="flex-shrink-0 inline-flex items-center justify-center" style="width: 16px; height: 16px; font-size: 14px;">{item.icon}</span>
                     )}
                     <span class="whitespace-nowrap">{item.name}</span>
                   </>
