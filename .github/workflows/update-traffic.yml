@@ -8,8 +8,12 @@ on:
 jobs:
   update-traffic:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Fetch Traffic Data
         run: |
@@ -41,10 +45,10 @@ jobs:
           
       - name: Commit Traffic Data
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git add public/traffic.json
-          git commit -m "Update traffic data" || exit 0
+          git commit -m "Update traffic data [skip ci]" || exit 0
           git push
           
       - name: Keep only 2 latest builds
