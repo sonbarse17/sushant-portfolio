@@ -66,13 +66,20 @@ const { title, description = "Portfolio of Sushant Sonbarse, DevOps Engineer spe
   <script>
     // GitHub Pages traffic counter from JSON file
     async function fetchGitHubTraffic() {
+      console.log('Fetching traffic data...');
       try {
-        const response = await fetch('/sushant-portfolio/traffic.json?t=' + Date.now());
+        const url = '/sushant-portfolio/traffic.json?t=' + Date.now();
+        console.log('Fetching from URL:', url);
+        const response = await fetch(url);
+        console.log('Response status:', response.status);
+        
         if (response.ok) {
           const data = await response.json();
-          console.log('Traffic data:', data);
+          console.log('Traffic data received:', data);
           const views = data.last_24h?.views || data.total_views || 0;
+          console.log('Views to display:', views);
           document.getElementById('traffic-count').textContent = views;
+          console.log('Traffic count updated successfully');
         } else {
           console.error('Failed to fetch traffic.json:', response.status);
           document.getElementById('traffic-count').textContent = 'N/A';
