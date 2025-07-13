@@ -43,26 +43,28 @@ import Layout from '../../layouts/Layout.astro';
             <p>Here's a simple example of creating an AWS VPC with Terraform:</p>
             
             <div class="bg-gray-900 p-6 rounded-lg overflow-x-auto my-6">
-              <div class="text-gray-100 text-sm font-mono whitespace-pre-line">resource "aws_vpc" "main" 
+              <div class="text-gray-100 text-sm font-mono whitespace-pre-line">{`resource "aws_vpc" "main" {
   cidr_block           = "10.0.0.0/16"
   enable_dns_hostnames = true
   enable_dns_support   = true
-  
-  tags = 
+
+  tags = {
     Name = "my-project-vpc"
+  }
+}
 
-
-resource "aws_subnet" "public" 
+resource "aws_subnet" "public" {
   count = 2
-  
+
   vpc_id                  = aws_vpc.main.id
   cidr_block              = "10.0.1.0/24"
   availability_zone       = "us-west-2a"
   map_public_ip_on_launch = true
-  
-  tags = 
+
+  tags = {
     Name = "my-project-public-subnet"
-</div>
+  }
+}`}</div>
             </div>
 
             <h2>Key Components</h2>
