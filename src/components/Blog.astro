@@ -207,7 +207,7 @@ spec:
   enable_dns_support   = true
   
   tags = {
-    Name = "${var.project_name}-vpc"
+    Name = "\${var.project_name}-vpc"
   }
 }
 
@@ -220,7 +220,7 @@ resource "aws_subnet" "public" {
   map_public_ip_on_launch = true
   
   tags = {
-    Name = "${var.project_name}-public-${count.index + 1}"
+    Name = "\${var.project_name}-public-\${count.index + 1}"
   }
 }</code></pre>
           
