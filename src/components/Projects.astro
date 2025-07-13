@@ -1,22 +1,70 @@
 ---
 const projects = [
   {
+    title: "DevOps Workflow Automation",
+    description: "A complete, automated CI/CD pipeline featuring planning, building, testing, and deploying a microservices application to a Kubernetes cluster with continuous monitoring.",
+    technologies: ["CI/CD", "Jenkins", "Docker", "Kubernetes", "Prometheus"],
+    link: "/sushant-portfolio/projects/devops-workflow",
+    diagram: `
+      <svg viewBox="0 0 100 60" class="w-full h-full">
+        <g fill="none" stroke-width="2">
+          <circle cx="15" cy="30" r="8" stroke="#3b82f6"/>
+          <path d="M23,30 H37" stroke="#6b7280" stroke-dasharray="2 2"/>
+          <rect x="38" y="22" width="16" height="16" rx="3" stroke="#22c55e"/>
+          <path d="M54,30 H68" stroke="#6b7280" stroke-dasharray="2 2"/>
+          <polygon points="68 22, 84 30, 68 38" stroke="#f97316" stroke-linejoin="round" stroke-linecap="round"/>
+        </g>
+      </svg>
+    `
+  },
+  {
     title: "End to End CI/CD Implementation",
     description: "Implemented an automated CI/CD pipeline for an e-commerce platform, reducing deployment time by 85%. Optimized Docker images, used Helm for Kubernetes deployments, and created Python automation scripts.",
     technologies: ["Jenkins", "Docker", "Kubernetes", "Helm", "Python"],
-    link: "/sushant-portfolio/projects/cicd-implementation"
+    link: "/sushant-portfolio/projects/cicd-implementation",
+    diagram: `
+      <svg viewBox="0 0 100 60" class="w-full h-full">
+        <g fill="none" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M10,30 Q25,10 40,30 T70,30" stroke="#3b82f6" stroke-width="3"/>
+          <path d="M70,30 L85,15 M70,30 L85,45" stroke="#22c55e" stroke-width="3"/>
+          <circle cx="10" cy="30" r="4" fill="#3b82f6"/>
+          <circle cx="40" cy="30" r="4" fill="#3b82f6"/>
+          <circle cx="70" cy="30" r="4" fill="#3b82f6"/>
+        </g>
+      </svg>
+    `
   },
   {
     title: "Three Tier Serverless Architecture",
     description: "Designed and deployed a scalable, serverless AWS architecture with EC2, VPC, Lambda, RDS, S3, CloudFront, and monitoring via the EFK stack.",
     technologies: ["AWS", "Lambda", "S3", "CloudFront", "EFK Stack"],
-    link: "/sushant-portfolio/projects/serverless-architecture"
+    link: "/sushant-portfolio/projects/serverless-architecture",
+    diagram: `
+      <svg viewBox="0 0 100 60" class="w-full h-full">
+        <g fill="none" stroke-width="2" stroke-linecap="round">
+          <rect x="10" y="10" width="80" height="15" rx="3" stroke="#f97316"/>
+          <rect x="10" y="35" width="80" height="15" rx="3" stroke="#3b82f6"/>
+          <path d="M50,25 V35" stroke="#6b7280"/>
+        </g>
+      </svg>
+    `
   },
   {
     title: "CRM Real Estate Microservices Deployment",
     description: "Deployed a CRM platform with 35 microservices using Angular, Spring Boot, Terraform, and AWS EKS. Cut release duration from 4 hours to 1 hour.",
     technologies: ["Angular", "Spring Boot", "Terraform", "AWS EKS"],
-    link: "/sushant-portfolio/projects/crm-microservices"
+    link: "/sushant-portfolio/projects/crm-microservices",
+    diagram: `
+      <svg viewBox="0 0 100 60" class="w-full h-full">
+        <g fill-opacity="0.8">
+          <circle cx="30" cy="20" r="8" fill="#ef4444"/>
+          <circle cx="50" cy="20" r="8" fill="#3b82f6"/>
+          <circle cx="70" cy="20" r="8" fill="#22c55e"/>
+          <circle cx="40" cy="40" r="8" fill="#f97316"/>
+          <circle cx="60" cy="40" r="8" fill="#8b5cf6"/>
+        </g>
+      </svg>
+    `
   }
 ];
 ---
@@ -32,7 +80,7 @@ const projects = [
       {projects.map((project, index) => (
         <div 
           class="group relative border rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-3 animate-slide-up overflow-hidden" :class="lightMode ? 'bg-gradient-to-br from-white to-gray-50 border-gray-200 hover:border-blue-500/50' : 'bg-gradient-to-br from-gray-900 to-black border-gray-800 hover:border-blue-500/50'"
-          style={`animation-delay: ${index * 0.2}s`}
+          style={`animation-delay: ${index * 0.1}s`}
         >
           <!-- Gradient overlay -->
           <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
@@ -41,55 +89,7 @@ const projects = [
           <div class="relative z-10">
             <!-- Project Preview Image -->
             <div class="mb-6 rounded-lg overflow-hidden border transition-colors duration-300" :class="lightMode ? 'border-gray-200' : 'border-gray-700'">
-              <div class="h-32 flex items-center justify-center transition-colors duration-300" :class="lightMode ? 'bg-gradient-to-br from-gray-100 to-gray-200' : 'bg-gradient-to-br from-gray-800 to-gray-700'">
-                {index === 0 && (
-                  <!-- CI/CD Pipeline Diagram -->
-                  <div class="flex items-center space-x-2 text-xs">
-                    <div class="flex flex-col items-center">
-                      <div class="w-8 h-8 rounded bg-blue-500 flex items-center justify-center text-white text-xs font-bold">CI</div>
-                      <div class="text-gray-500 mt-1">Code</div>
-                    </div>
-                    <div class="text-gray-400">→</div>
-                    <div class="flex flex-col items-center">
-                      <div class="w-8 h-8 rounded bg-green-500 flex items-center justify-center text-white text-xs font-bold">🔧</div>
-                      <div class="text-gray-500 mt-1">Build</div>
-                    </div>
-                    <div class="text-gray-400">→</div>
-                    <div class="flex flex-col items-center">
-                      <div class="w-8 h-8 rounded bg-purple-500 flex items-center justify-center text-white text-xs font-bold">🚀</div>
-                      <div class="text-gray-500 mt-1">Deploy</div>
-                    </div>
-                  </div>
-                )}
-                {index === 1 && (
-                  <!-- Serverless Architecture Diagram -->
-                  <div class="flex items-center space-x-2 text-xs">
-                    <div class="flex flex-col items-center">
-                      <div class="w-8 h-8 rounded bg-orange-500 flex items-center justify-center text-white text-xs font-bold">☁️</div>
-                      <div class="text-gray-500 mt-1">CDN</div>
-                    </div>
-                    <div class="text-gray-400">→</div>
-                    <div class="flex flex-col items-center">
-                      <div class="w-8 h-8 rounded bg-blue-500 flex items-center justify-center text-white text-xs font-bold">λ</div>
-                      <div class="text-gray-500 mt-1">Lambda</div>
-                    </div>
-                    <div class="text-gray-400">→</div>
-                    <div class="flex flex-col items-center">
-                      <div class="w-8 h-8 rounded bg-green-500 flex items-center justify-center text-white text-xs font-bold">🗄️</div>
-                      <div class="text-gray-500 mt-1">RDS</div>
-                    </div>
-                  </div>
-                )}
-                {index === 2 && (
-                  <!-- Microservices Architecture -->
-                  <div class="grid grid-cols-3 gap-2 text-xs">
-                    <div class="w-6 h-6 rounded bg-red-500 flex items-center justify-center text-white font-bold">MS</div>
-                    <div class="w-6 h-6 rounded bg-blue-500 flex items-center justify-center text-white font-bold">MS</div>
-                    <div class="w-6 h-6 rounded bg-green-500 flex items-center justify-center text-white font-bold">MS</div>
-                    <div class="col-span-3 text-center text-gray-500 mt-1">35 Microservices</div>
-                  </div>
-                )}
-              </div>
+              <div class="h-32 flex items-center justify-center transition-colors duration-300" :class="lightMode ? 'bg-gradient-to-br from-gray-100 to-gray-200' : 'bg-gradient-to-br from-gray-800 to-gray-700'" set:html={project.diagram} />
             </div>
 
             <div class="flex items-start justify-between mb-4">
@@ -123,7 +123,9 @@ const projects = [
                   'Spring Boot': '🍃',
                   'Terraform': '/sushant-portfolio/icons/terraform.png',
                   'AWS EKS': '/sushant-portfolio/icons/kubernetes.png',
-                  'EFK Stack': '📊'
+                  'EFK Stack': '📊',
+                  'CI/CD': '🚀',
+                  'Prometheus': '/sushant-portfolio/icons/prometheus.png'
                 };
                 return (
                   <span class="backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium border hover:border-blue-500/50 transition-colors duration-300 inline-flex items-center gap-2" :class="lightMode ? 'bg-gray-100/80 text-blue-600 border-gray-300/50' : 'bg-gray-800/80 text-blue-300 border-gray-700/50'">

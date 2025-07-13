@@ -24,10 +24,18 @@ import Layout from '../../layouts/Layout.astro';
                   .dark .label { fill: #d1d5db; }
                   .title { font-family: 'Segoe UI', sans-serif; font-size: 16px; font-weight: 600; fill: #1f2937; }
                   .dark .title { fill: #fff; }
-                  .arrow { stroke: #9ca3af; stroke-width: 2; marker-end: url(#arrowhead); }
+                  .arrow { stroke: #9ca3af; stroke-width: 2; marker-end: url(#arrowhead); animation: dash 5s linear infinite; }
                   .dark .arrow { stroke: #6b7280; }
                   .box { rx: 8; ry: 8; stroke: #e5e7eb; stroke-width: 1; }
                   .dark .box { stroke: #4b5563; }
+                  @keyframes dash {
+                    from {
+                      stroke-dashoffset: 100;
+                    }
+                    to {
+                      stroke-dashoffset: 0;
+                    }
+                  }
                 </style>
                 <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
                   <polygon points="0 0, 10 3.5, 0 7" fill="#9ca3af"/>
@@ -88,13 +96,13 @@ import Layout from '../../layouts/Layout.astro';
               </g>
 
               <!-- Arrows -->
-              <path d="M170,200 C195,200 195,150 220,150" fill="none" class="arrow" />
-              <path d="M370,200 H 420" fill="none" class="arrow" />
-              <path d="M570,200 H 620" fill="none" class="arrow" />
-              <path d="M770,200 C795,200 795,150 820,150" fill="none" class="arrow" />
-              <path d="M895,215 V 250" fill="none" class="arrow" />
-              <path d="M770,400 H 420" fill="none" class="arrow" />
-              <path d="M420,400 C 300,400 300,70 170,70" fill="none" class="arrow" />
+              <path d="M170,200 C195,200 195,150 220,150" fill="none" class="arrow" stroke-dasharray="10, 5" />
+              <path d="M370,200 H 420" fill="none" class="arrow" stroke-dasharray="10, 5" />
+              <path d="M570,200 H 620" fill="none" class="arrow" stroke-dasharray="10, 5" />
+              <path d="M770,200 C795,200 795,150 820,150" fill="none" class="arrow" stroke-dasharray="10, 5" />
+              <path d="M895,215 V 250" fill="none" class="arrow" stroke-dasharray="10, 5" />
+              <path d="M770,400 H 420" fill="none" class="arrow" stroke-dasharray="10, 5" />
+              <path d="M420,400 C 300,400 300,70 170,70" fill="none" class="arrow" stroke-dasharray="10, 5" />
             </svg>
           </div>
         </div>
