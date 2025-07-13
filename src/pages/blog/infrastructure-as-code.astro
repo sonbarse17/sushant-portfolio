@@ -1,0 +1,109 @@
+
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Infrastructure as Code with Terraform - Sushant Sonbarse">
+  <main class="min-h-screen bg-black text-white">
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-br from-gray-900 to-black">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">Infrastructure as Code with Terraform</h1>
+          <p class="text-xl text-gray-300 mb-8">Learn how to manage your cloud infrastructure using code</p>
+          <div class="flex items-center justify-center space-x-4 text-gray-400">
+            <span>December 15, 2024</span>
+            <span>•</span>
+            <span>8 min read</span>
+            <span>•</span>
+            <span>DevOps</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <div class="prose prose-lg prose-invert">
+            <h2>What is Infrastructure as Code?</h2>
+            <p>Infrastructure as Code (IaC) is the practice of managing and provisioning computing infrastructure through machine-readable definition files, rather than physical hardware configuration or interactive configuration tools.</p>
+
+            <h2>Why Terraform?</h2>
+            <p>Terraform is one of the most popular IaC tools because it:</p>
+            <ul>
+              <li>Supports multiple cloud providers</li>
+              <li>Uses declarative syntax</li>
+              <li>Provides state management</li>
+              <li>Has a large community and ecosystem</li>
+            </ul>
+
+            <h2>Basic Terraform Example</h2>
+            <p>Here's a simple example of creating an AWS VPC with Terraform:</p>
+            
+            <pre class="bg-gray-900 p-6 rounded-lg overflow-x-auto"><code>resource "aws_vpc" "main" {
+  cidr_block           = "10.0.0.0/16"
+  enable_dns_hostnames = true
+  enable_dns_support   = true
+  
+  tags = {
+    Name = "\${var.project_name}-vpc"
+  }
+}
+
+resource "aws_subnet" "public" {
+  count = 2
+  
+  vpc_id                  = aws_vpc.main.id
+  cidr_block              = "10.0.\${count.index + 1}.0/24"
+  availability_zone       = data.aws_availability_zones.available.names[count.index]
+  map_public_ip_on_launch = true
+  
+  tags = {
+    Name = "\${var.project_name}-public-\${count.index + 1}"
+  }
+}</code></pre>
+
+            <h2>Best Practices</h2>
+            <ol>
+              <li><strong>Use version control:</strong> Store your Terraform code in Git</li>
+              <li><strong>Use modules:</strong> Create reusable components</li>
+              <li><strong>Manage state safely:</strong> Use remote state backends</li>
+              <li><strong>Plan before apply:</strong> Always run terraform plan first</li>
+            </ol>
+
+            <h2>Conclusion</h2>
+            <p>Infrastructure as Code with Terraform enables you to manage your infrastructure efficiently, consistently, and with confidence. Start small with simple resources and gradually build more complex infrastructures as you become comfortable with the tool.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .prose h2 {
+    @apply text-2xl font-bold text-white mt-8 mb-4;
+  }
+  
+  .prose p {
+    @apply text-gray-300 mb-4 leading-relaxed;
+  }
+  
+  .prose ul, .prose ol {
+    @apply text-gray-300 mb-4;
+  }
+  
+  .prose li {
+    @apply mb-2;
+  }
+  
+  .prose strong {
+    @apply text-white font-semibold;
+  }
+  
+  .prose code {
+    @apply bg-gray-800 px-2 py-1 rounded text-blue-400;
+  }
+</style>

@@ -1,0 +1,116 @@
+
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Kubernetes Deployment Strategies - Sushant Sonbarse">
+  <main class="min-h-screen bg-black text-white">
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-br from-gray-900 to-black">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">Kubernetes Deployment Strategies</h1>
+          <p class="text-xl text-gray-300 mb-8">Master different deployment strategies for zero-downtime releases</p>
+          <div class="flex items-center justify-center space-x-4 text-gray-400">
+            <span>December 10, 2024</span>
+            <span>•</span>
+            <span>10 min read</span>
+            <span>•</span>
+            <span>Kubernetes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <div class="prose prose-lg prose-invert">
+            <h2>Introduction to Deployment Strategies</h2>
+            <p>Kubernetes offers several deployment strategies to help you update your applications with minimal downtime and risk. Understanding these strategies is crucial for maintaining highly available applications.</p>
+
+            <h2>Rolling Updates</h2>
+            <p>Rolling updates are the default deployment strategy in Kubernetes. They gradually replace old pods with new ones:</p>
+            
+            <pre class="bg-gray-900 p-6 rounded-lg overflow-x-auto"><code>apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+spec:
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+      - name: my-app
+        image: my-app:v2
+        ports:
+        - containerPort: 8080</code></pre>
+
+            <h2>Blue-Green Deployments</h2>
+            <p>Blue-green deployments maintain two identical production environments. You switch traffic from the old version (blue) to the new version (green) instantly.</p>
+
+            <h2>Canary Deployments</h2>
+            <p>Canary deployments gradually shift traffic to the new version while monitoring metrics and user feedback. This allows you to catch issues early with minimal impact.</p>
+
+            <h2>Benefits of Each Strategy</h2>
+            <ul>
+              <li><strong>Rolling Updates:</strong> Simple, built-in, gradual rollout</li>
+              <li><strong>Blue-Green:</strong> Instant rollback, zero downtime</li>
+              <li><strong>Canary:</strong> Risk mitigation, gradual validation</li>
+            </ul>
+
+            <h2>Choosing the Right Strategy</h2>
+            <p>Consider your application's requirements:</p>
+            <ol>
+              <li><strong>Risk tolerance:</strong> How much risk can you accept?</li>
+              <li><strong>Resource availability:</strong> Do you have enough resources for blue-green?</li>
+              <li><strong>Rollback requirements:</strong> How quickly do you need to rollback?</li>
+              <li><strong>Testing capabilities:</strong> Can you validate the new version gradually?</li>
+            </ol>
+
+            <h2>Conclusion</h2>
+            <p>Each deployment strategy has its place in modern application delivery. Start with rolling updates for simplicity, then explore blue-green and canary deployments as your requirements become more sophisticated.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .prose h2 {
+    @apply text-2xl font-bold text-white mt-8 mb-4;
+  }
+  
+  .prose p {
+    @apply text-gray-300 mb-4 leading-relaxed;
+  }
+  
+  .prose ul, .prose ol {
+    @apply text-gray-300 mb-4;
+  }
+  
+  .prose li {
+    @apply mb-2;
+  }
+  
+  .prose strong {
+    @apply text-white font-semibold;
+  }
+  
+  .prose code {
+    @apply bg-gray-800 px-2 py-1 rounded text-blue-400;
+  }
+</style>

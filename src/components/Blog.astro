@@ -1,4 +1,3 @@
-
 ---
 ---
 
@@ -99,7 +98,7 @@
         <div class="prose prose-lg max-w-none">
           <h3>Introduction</h3>
           <p>Running Kubernetes in production requires careful planning and adherence to best practices. This guide covers essential considerations for maintaining secure, scalable, and reliable Kubernetes clusters.</p>
-          
+
           <h3>Security Best Practices</h3>
           <ul>
             <li><strong>RBAC (Role-Based Access Control):</strong> Implement fine-grained permissions for users and service accounts</li>
@@ -107,7 +106,7 @@
             <li><strong>Pod Security Standards:</strong> Use security contexts and admission controllers</li>
             <li><strong>Secrets Management:</strong> Never store sensitive data in plain text</li>
           </ul>
-          
+
           <h3>Resource Management</h3>
           <p>Proper resource allocation ensures optimal performance and cost efficiency:</p>
           <pre><code>apiVersion: v1
@@ -122,10 +121,10 @@ spec:
       limits:
         memory: "512Mi"
         cpu: "500m"</code></pre>
-          
+
           <h3>Monitoring and Observability</h3>
           <p>Implement comprehensive monitoring with Prometheus, Grafana, and centralized logging to maintain visibility into your cluster's health and performance.</p>
-          
+
           <h3>Backup and Disaster Recovery</h3>
           <p>Regular backups of etcd and persistent volumes are crucial for disaster recovery. Consider using tools like Velero for comprehensive backup solutions.</p>
         </div>
@@ -137,7 +136,7 @@ spec:
         <div class="prose prose-lg max-w-none">
           <h3>Pipeline Optimization Strategies</h3>
           <p>Efficient CI/CD pipelines are crucial for rapid software delivery. Here are proven strategies to optimize your pipelines.</p>
-          
+
           <h3>Build Time Optimization</h3>
           <ul>
             <li><strong>Parallel Execution:</strong> Run independent jobs concurrently</li>
@@ -145,7 +144,7 @@ spec:
             <li><strong>Docker Layer Caching:</strong> Optimize Dockerfile for better layer reuse</li>
             <li><strong>Incremental Builds:</strong> Only rebuild changed components</li>
           </ul>
-          
+
           <h3>Example Jenkins Pipeline</h3>
           <pre><code>pipeline {
     agent any
@@ -176,10 +175,10 @@ spec:
         }
     }
 }</code></pre>
-          
+
           <h3>Quality Gates</h3>
           <p>Implement automated quality checks including code coverage, security scanning, and performance testing to maintain high code quality.</p>
-          
+
           <h3>Deployment Strategies</h3>
           <p>Use blue-green or canary deployments to minimize downtime and reduce deployment risks.</p>
         </div>
@@ -191,7 +190,7 @@ spec:
         <div class="prose prose-lg max-w-none">
           <h3>Getting Started with Terraform</h3>
           <p>Infrastructure as Code (IaC) enables you to manage and provision infrastructure through code, making it version-controlled, repeatable, and scalable.</p>
-          
+
           <h3>Terraform Best Practices</h3>
           <ul>
             <li><strong>Module Organization:</strong> Create reusable modules for common infrastructure patterns</li>
@@ -199,13 +198,13 @@ spec:
             <li><strong>Variable Management:</strong> Use variables and locals for flexibility</li>
             <li><strong>Resource Naming:</strong> Follow consistent naming conventions</li>
           </ul>
-          
+
           <h3>Example AWS Infrastructure</h3>
           <pre><code>resource "aws_vpc" "main" {
   cidr_block           = var.vpc_cidr
   enable_dns_hostnames = true
   enable_dns_support   = true
-  
+
   tags = {
     Name = "\${var.project_name}-vpc"
   }
@@ -216,17 +215,17 @@ resource "aws_subnet" "public" {
   vpc_id            = aws_vpc.main.id
   cidr_block        = var.public_subnet_cidrs[count.index]
   availability_zone = data.aws_availability_zones.available.names[count.index]
-  
+
   map_public_ip_on_launch = true
-  
+
   tags = {
     Name = "\${var.project_name}-public-\${count.index + 1}"
   }
 }</code></pre>
-          
+
           <h3>State Management</h3>
           <p>Always use remote state storage with S3 and DynamoDB for state locking in production environments.</p>
-          
+
           <h3>Testing Infrastructure</h3>
           <p>Use tools like Terratest for automated testing of your infrastructure code to ensure reliability and prevent regressions.</p>
         </div>
