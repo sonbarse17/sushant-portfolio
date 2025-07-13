@@ -43,29 +43,35 @@ import Layout from '../../layouts/Layout.astro';
             <p>Here's a simple example of creating an AWS VPC with Terraform:</p>
             
             <div class="bg-gray-900 p-6 rounded-lg overflow-x-auto my-6">
-              <div class="text-gray-100 text-sm font-mono whitespace-pre">resource "aws_vpc" "main" {
+              <div class="text-gray-100 text-sm font-mono whitespace-pre-line">resource "aws_vpc" "main" 
   cidr_block           = "10.0.0.0/16"
   enable_dns_hostnames = true
   enable_dns_support   = true
   
-  tags = {
-    Name = "&#36;{var.project_name}-vpc"
-  }
-}
+  tags = 
+    Name = "my-project-vpc"
 
-resource "aws_subnet" "public" {
+
+resource "aws_subnet" "public" 
   count = 2
   
   vpc_id                  = aws_vpc.main.id
-  cidr_block              = "10.0.&#36;{count.index + 1}.0/24"
-  availability_zone       = data.aws_availability_zones.available.names[count.index]
+  cidr_block              = "10.0.1.0/24"
+  availability_zone       = "us-west-2a"
   map_public_ip_on_launch = true
   
-  tags = {
-    Name = "&#36;{var.project_name}-public-&#36;{count.index + 1}"
-  }
-}</div>
+  tags = 
+    Name = "my-project-public-subnet"
+</div>
             </div>
+
+            <h2>Key Components</h2>
+            <ul>
+              <li><strong>Providers:</strong> Define which cloud platform to use</li>
+              <li><strong>Resources:</strong> Infrastructure components like VMs, networks</li>
+              <li><strong>Variables:</strong> Make configurations reusable</li>
+              <li><strong>Outputs:</strong> Export values for other configurations</li>
+            </ul>
 
             <h2>Best Practices</h2>
             <ol>
@@ -91,6 +97,14 @@ resource "aws_subnet" "public" {
               <li>Write your first configuration file</li>
               <li>Run terraform init, plan, and apply</li>
             </ol>
+
+            <h2>Common Commands</h2>
+            <ul>
+              <li><strong>terraform init:</strong> Initialize a working directory</li>
+              <li><strong>terraform plan:</strong> Preview changes</li>
+              <li><strong>terraform apply:</strong> Apply changes</li>
+              <li><strong>terraform destroy:</strong> Remove infrastructure</li>
+            </ul>
 
             <h2>Conclusion</h2>
             <p>Infrastructure as Code with Terraform enables you to manage your infrastructure efficiently, consistently, and with confidence. Start small with simple resources and gradually build more complex infrastructures as you become comfortable with the tool.</p>
