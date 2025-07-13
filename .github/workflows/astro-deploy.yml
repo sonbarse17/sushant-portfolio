@@ -2,7 +2,7 @@ name: Deploy Astro Portfolio
 
 on:
   schedule:
-    - cron: '* 6 * * *' # Every 6 Hour
+    - cron: '0 */6 * * *' # Every 6 Hour
   workflow_dispatch:
 
 permissions:
