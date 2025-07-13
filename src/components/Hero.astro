@@ -1,39 +1,55 @@
 ---
 ---
 
-<section class="min-h-screen flex items-center justify-center relative overflow-hidden transition-colors duration-300" :class="lightMode ? 'bg-gradient-to-br from-white via-gray-50 to-white' : 'bg-gradient-to-br from-black via-gray-900 to-black'">
-  <!-- Animated background -->
-  <div class="absolute inset-0">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_50%)] animate-pulse"></div>
-    <div class="absolute top-1/4 left-1/4 w-48 sm:w-96 h-48 sm:h-96 bg-blue-500/10 rounded-full blur-3xl animate-float"></div>
-    <div class="absolute bottom-1/4 right-1/4 w-40 sm:w-80 h-40 sm:h-80 bg-purple-500/10 rounded-full blur-3xl animate-float-delayed"></div>
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden" :class="lightMode ? 'bg-gradient-to-br from-blue-50 to-indigo-100' : 'bg-gradient-to-br from-black via-gray-900 to-black'">
+  <!-- Animated background elements -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute -top-4 -left-4 w-72 h-72 rounded-full blur-3xl animate-pulse" :class="lightMode ? 'bg-blue-300/30' : 'bg-blue-500/20'"></div>
+    <div class="absolute top-1/2 -right-4 w-96 h-96 rounded-full blur-3xl animate-pulse" :class="lightMode ? 'bg-purple-300/30' : 'bg-purple-500/20'" style="animation-delay: 2s"></div>
+    <div class="absolute -bottom-8 left-1/2 w-80 h-80 rounded-full blur-3xl animate-pulse" :class="lightMode ? 'bg-indigo-300/30' : 'bg-indigo-500/20'" style="animation-delay: 4s"></div>
   </div>
-  
+
   <div class="container mx-auto px-4 sm:px-6 text-center relative z-10">
-    <div class="relative mb-6 sm:mb-8 group">
-      <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
-      <img 
-        src="/sushant-portfolio/images/Snapchat-1800569552-01-removebg-preview.png" 
-        alt="Sushant Sonbarse - DevOps Engineer" 
-        class="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full mx-auto object-cover border-2 group-hover:scale-105 transition-all duration-500" :class="lightMode ? 'bg-white border-gray-300' : 'bg-black border-gray-800'"
-        loading="eager"
-      />
-    </div>
-    
-    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6">
+    <div class="max-w-4xl mx-auto animate-slide-up">
+      <!-- Profile Image -->
+      <div class="mb-8 animate-fade-in">
+        <div class="relative inline-block">
+          <div class="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 mx-auto rounded-full overflow-hidden border-4 shadow-2xl transition-all duration-300 hover:scale-105" :class="lightMode ? 'border-blue-300 shadow-blue-200/50' : 'border-blue-500/50 shadow-blue-500/30'">
+            <img 
+              src="/sushant-portfolio/images/Snapchat-1800569552-01-removebg-preview.png" 
+              alt="Sushant Sonbarse - DevOps Engineer" 
+              class="w-full h-full object-cover object-center"
+            />
+          </div>
+          <!-- Status indicator -->
+          <div class="absolute bottom-2 right-2 w-6 h-6 bg-green-500 rounded-full border-4 animate-pulse" :class="lightMode ? 'border-white' : 'border-gray-900'"></div>
+        </div>
+      </div>
+
+      <!-- Main heading -->
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+        <span class="block transition-colors duration-300" :class="lightMode ? 'text-gray-900' : 'text-white'">
+          Hi, I'm
+        </span>
+        <span class="block bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 bg-clip-text text-transparent animate-gradient-x">
+          Sushant Sonbarse
+        </span>
+      </h1>
+
+    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6">
       <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Hi, I'm </span>
       <span class="animate-gradient">Sushant Sonbarse</span>
-    </h1>
-    
+    </h2>
+
     <h2 class="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 sm:mb-8 font-light transition-colors duration-300" :class="lightMode ? 'text-gray-700' : 'text-gray-300'">
       <span class="font-semibold transition-colors duration-300" :class="lightMode ? 'text-blue-600' : 'text-blue-400'" id="typing-text">DevOps Engineer</span>
     </h2>
-    
+
     <p class="text-sm sm:text-base md:text-lg lg:text-xl mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed px-4 transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-300'">
       Specializing in automation, containerization, and scalable CI/CD pipelines. 
       Passionate about infrastructure as code and cloud technologies.
     </p>
-    
+
     <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
       <a 
         href="/sushant-portfolio/sushant_sonbarse_resume.pdf" 
@@ -69,19 +85,19 @@
     0%, 100% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
   }
-  
+
   @keyframes float {
     0%, 100% { transform: translateY(0px) rotate(0deg); }
     33% { transform: translateY(-10px) rotate(1deg); }
     66% { transform: translateY(5px) rotate(-1deg); }
   }
-  
+
   @keyframes tilt {
     0%, 50%, 100% { transform: rotate(0deg); }
     25% { transform: rotate(1deg); }
     75% { transform: rotate(-1deg); }
   }
-  
+
   .animate-gradient {
     background: linear-gradient(-45deg, #60a5fa, #a78bfa, #f472b6, #34d399);
     background-size: 400% 400%;
@@ -91,25 +107,25 @@
     background-clip: text;
     color: transparent;
   }
-  
+
   .animate-float {
     animation: float 6s ease-in-out infinite;
   }
-  
+
   .animate-float-delayed {
     animation: float 6s ease-in-out infinite;
     animation-delay: -3s;
   }
-  
+
   .animate-tilt {
     animation: tilt 10s infinite linear;
   }
-  
+
   .typing-cursor::after {
     content: '|';
     animation: blink 1s infinite;
   }
-  
+
   @keyframes blink {
     0%, 50% { opacity: 1; }
     51%, 100% { opacity: 0; }
@@ -121,32 +137,32 @@
   let currentRole = 0;
   let currentChar = 0;
   let isDeleting = false;
-  
+
   function typeWriter() {
     const element = document.getElementById('typing-text');
     const currentText = roles[currentRole];
-    
+
     if (!isDeleting) {
       element.textContent = currentText.substring(0, currentChar + 1);
       currentChar++;
-      
+
       if (currentChar === currentText.length) {
         setTimeout(() => isDeleting = true, 2000);
       }
     } else {
       element.textContent = currentText.substring(0, currentChar - 1);
       currentChar--;
-      
+
       if (currentChar === 0) {
         isDeleting = false;
         currentRole = (currentRole + 1) % roles.length;
       }
     }
-    
+
     const speed = isDeleting ? 50 : 100;
     setTimeout(typeWriter, speed);
   }
-  
+
   document.addEventListener('DOMContentLoaded', () => {
     setTimeout(typeWriter, 1000);
   });

@@ -39,6 +39,59 @@ const projects = [
           
           <!-- Content -->
           <div class="relative z-10">
+            <!-- Project Preview Image -->
+            <div class="mb-6 rounded-lg overflow-hidden border transition-colors duration-300" :class="lightMode ? 'border-gray-200' : 'border-gray-700'">
+              <div class="h-32 flex items-center justify-center transition-colors duration-300" :class="lightMode ? 'bg-gradient-to-br from-gray-100 to-gray-200' : 'bg-gradient-to-br from-gray-800 to-gray-700'">
+                {index === 0 && (
+                  <!-- CI/CD Pipeline Diagram -->
+                  <div class="flex items-center space-x-2 text-xs">
+                    <div class="flex flex-col items-center">
+                      <div class="w-8 h-8 rounded bg-blue-500 flex items-center justify-center text-white text-xs font-bold">CI</div>
+                      <div class="text-gray-500 mt-1">Code</div>
+                    </div>
+                    <div class="text-gray-400">→</div>
+                    <div class="flex flex-col items-center">
+                      <div class="w-8 h-8 rounded bg-green-500 flex items-center justify-center text-white text-xs font-bold">🔧</div>
+                      <div class="text-gray-500 mt-1">Build</div>
+                    </div>
+                    <div class="text-gray-400">→</div>
+                    <div class="flex flex-col items-center">
+                      <div class="w-8 h-8 rounded bg-purple-500 flex items-center justify-center text-white text-xs font-bold">🚀</div>
+                      <div class="text-gray-500 mt-1">Deploy</div>
+                    </div>
+                  </div>
+                )}
+                {index === 1 && (
+                  <!-- Serverless Architecture Diagram -->
+                  <div class="flex items-center space-x-2 text-xs">
+                    <div class="flex flex-col items-center">
+                      <div class="w-8 h-8 rounded bg-orange-500 flex items-center justify-center text-white text-xs font-bold">☁️</div>
+                      <div class="text-gray-500 mt-1">CDN</div>
+                    </div>
+                    <div class="text-gray-400">→</div>
+                    <div class="flex flex-col items-center">
+                      <div class="w-8 h-8 rounded bg-blue-500 flex items-center justify-center text-white text-xs font-bold">λ</div>
+                      <div class="text-gray-500 mt-1">Lambda</div>
+                    </div>
+                    <div class="text-gray-400">→</div>
+                    <div class="flex flex-col items-center">
+                      <div class="w-8 h-8 rounded bg-green-500 flex items-center justify-center text-white text-xs font-bold">🗄️</div>
+                      <div class="text-gray-500 mt-1">RDS</div>
+                    </div>
+                  </div>
+                )}
+                {index === 2 && (
+                  <!-- Microservices Architecture -->
+                  <div class="grid grid-cols-3 gap-2 text-xs">
+                    <div class="w-6 h-6 rounded bg-red-500 flex items-center justify-center text-white font-bold">MS</div>
+                    <div class="w-6 h-6 rounded bg-blue-500 flex items-center justify-center text-white font-bold">MS</div>
+                    <div class="w-6 h-6 rounded bg-green-500 flex items-center justify-center text-white font-bold">MS</div>
+                    <div class="col-span-3 text-center text-gray-500 mt-1">35 Microservices</div>
+                  </div>
+                )}
+              </div>
+            </div>
+
             <div class="flex items-start justify-between mb-4">
               <h3 class="text-xl font-bold group-hover:text-blue-400 transition-colors duration-300" :class="lightMode ? 'text-gray-900' : 'text-white'">
                 {project.title}
