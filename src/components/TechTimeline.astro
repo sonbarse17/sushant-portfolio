@@ -1,0 +1,114 @@
+
+---
+---
+
+<section id="timeline" class="py-20 transition-colors duration-300" :class="lightMode ? 'bg-gray-50' : 'bg-gray-900'">
+  <div class="container mx-auto px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16 animate-slide-up">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4 transition-colors duration-300" :class="lightMode ? 'text-gray-900' : 'text-white'">Technology Journey</h2>
+        <p class="text-lg transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-400'">My evolution in DevOps and cloud technologies</p>
+      </div>
+
+      <div class="relative">
+        <!-- Timeline Line -->
+        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full"></div>
+
+        <!-- Timeline Items -->
+        <div class="space-y-12">
+          <!-- 2023 -->
+          <div class="relative animate-slide-up">
+            <div class="flex items-center justify-center">
+              <div class="w-8 h-8 bg-blue-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-4">
+              <div class="lg:text-right">
+                <div class="inline-block p-6 rounded-xl border transition-all duration-300 hover:shadow-lg" :class="lightMode ? 'bg-white border-gray-200' : 'bg-gray-800 border-gray-700'">
+                  <div class="text-2xl font-bold mb-2 text-blue-500">2023</div>
+                  <h3 class="text-xl font-semibold mb-3 transition-colors duration-300" :class="lightMode ? 'text-gray-900' : 'text-white'">Advanced DevOps</h3>
+                  <p class="text-sm mb-4 transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-400'">Mastered enterprise-level DevOps practices and cloud-native technologies</p>
+                  <div class="flex flex-wrap gap-2 justify-end">
+                    <span class="px-3 py-1 text-xs bg-blue-100 text-blue-800 rounded-full">Kubernetes</span>
+                    <span class="px-3 py-1 text-xs bg-green-100 text-green-800 rounded-full">Terraform</span>
+                    <span class="px-3 py-1 text-xs bg-purple-100 text-purple-800 rounded-full">Helm</span>
+                    <span class="px-3 py-1 text-xs bg-orange-100 text-orange-800 rounded-full">Monitoring</span>
+                  </div>
+                </div>
+              </div>
+              <div></div>
+            </div>
+          </div>
+
+          <!-- 2022 -->
+          <div class="relative animate-slide-up" style="animation-delay: 0.1s">
+            <div class="flex items-center justify-center">
+              <div class="w-8 h-8 bg-green-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-4">
+              <div></div>
+              <div>
+                <div class="inline-block p-6 rounded-xl border transition-all duration-300 hover:shadow-lg" :class="lightMode ? 'bg-white border-gray-200' : 'bg-gray-800 border-gray-700'">
+                  <div class="text-2xl font-bold mb-2 text-green-500">2022</div>
+                  <h3 class="text-xl font-semibold mb-3 transition-colors duration-300" :class="lightMode ? 'text-gray-900' : 'text-white'">Cloud & Automation</h3>
+                  <p class="text-sm mb-4 transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-400'">Specialized in cloud platforms and infrastructure automation</p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 text-xs bg-yellow-100 text-yellow-800 rounded-full">AWS</span>
+                    <span class="px-3 py-1 text-xs bg-blue-100 text-blue-800 rounded-full">Docker</span>
+                    <span class="px-3 py-1 text-xs bg-red-100 text-red-800 rounded-full">Ansible</span>
+                    <span class="px-3 py-1 text-xs bg-green-100 text-green-800 rounded-full">CI/CD</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2021 -->
+          <div class="relative animate-slide-up" style="animation-delay: 0.2s">
+            <div class="flex items-center justify-center">
+              <div class="w-8 h-8 bg-purple-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-4">
+              <div class="lg:text-right">
+                <div class="inline-block p-6 rounded-xl border transition-all duration-300 hover:shadow-lg" :class="lightMode ? 'bg-white border-gray-200' : 'bg-gray-800 border-gray-700'">
+                  <div class="text-2xl font-bold mb-2 text-purple-500">2021</div>
+                  <h3 class="text-xl font-semibold mb-3 transition-colors duration-300" :class="lightMode ? 'text-gray-900' : 'text-white'">DevOps Foundation</h3>
+                  <p class="text-sm mb-4 transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-400'">Started DevOps journey with core tools and practices</p>
+                  <div class="flex flex-wrap gap-2 justify-end">
+                    <span class="px-3 py-1 text-xs bg-gray-100 text-gray-800 rounded-full">Linux</span>
+                    <span class="px-3 py-1 text-xs bg-orange-100 text-orange-800 rounded-full">Git</span>
+                    <span class="px-3 py-1 text-xs bg-blue-100 text-blue-800 rounded-full">Jenkins</span>
+                    <span class="px-3 py-1 text-xs bg-green-100 text-green-800 rounded-full">Scripting</span>
+                  </div>
+                </div>
+              </div>
+              <div></div>
+            </div>
+          </div>
+
+          <!-- Future Goals -->
+          <div class="relative animate-slide-up" style="animation-delay: 0.3s">
+            <div class="flex items-center justify-center">
+              <div class="w-8 h-8 bg-gradient-to-r from-pink-500 to-orange-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-4">
+              <div></div>
+              <div>
+                <div class="inline-block p-6 rounded-xl border transition-all duration-300 hover:shadow-lg" :class="lightMode ? 'bg-white border-gray-200' : 'bg-gray-800 border-gray-700'">
+                  <div class="text-2xl font-bold mb-2 bg-gradient-to-r from-pink-500 to-orange-500 bg-clip-text text-transparent">2025+</div>
+                  <h3 class="text-xl font-semibold mb-3 transition-colors duration-300" :class="lightMode ? 'text-gray-900' : 'text-white'">Future Goals</h3>
+                  <p class="text-sm mb-4 transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-400'">Exploring emerging technologies and advanced practices</p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 text-xs bg-pink-100 text-pink-800 rounded-full">AI/ML Ops</span>
+                    <span class="px-3 py-1 text-xs bg-indigo-100 text-indigo-800 rounded-full">Service Mesh</span>
+                    <span class="px-3 py-1 text-xs bg-teal-100 text-teal-800 rounded-full">Edge Computing</span>
+                    <span class="px-3 py-1 text-xs bg-amber-100 text-amber-800 rounded-full">GitOps</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

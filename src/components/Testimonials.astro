@@ -1,0 +1,200 @@
+
+---
+---
+
+<section id="testimonials" class="py-20 transition-colors duration-300" :class="lightMode ? 'bg-white' : 'bg-black'">
+  <div class="container mx-auto px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16 animate-slide-up">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4 transition-colors duration-300" :class="lightMode ? 'text-gray-900' : 'text-white'">What Colleagues Say</h2>
+        <p class="text-lg transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-400'">Feedback from team members and collaborators</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="animate-slide-up">
+          <div class="h-full p-8 rounded-2xl border transition-all duration-300 hover:shadow-xl hover:scale-105" :class="lightMode ? 'bg-gray-50 border-gray-200' : 'bg-gray-900 border-gray-800'">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                A
+              </div>
+              <div class="ml-4">
+                <h3 class="font-semibold transition-colors duration-300" :class="lightMode ? 'text-gray-900' : 'text-white'">Amit Sharma</h3>
+                <p class="text-sm transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-400'">Senior DevOps Engineer</p>
+              </div>
+            </div>
+            <p class="text-sm leading-relaxed mb-6 transition-colors duration-300" :class="lightMode ? 'text-gray-700' : 'text-gray-300'">
+              "Sushant's expertise in Kubernetes and infrastructure automation significantly improved our deployment processes. His attention to detail and problem-solving skills are exceptional."
+            </p>
+            <div class="flex items-center">
+              <div class="flex text-yellow-400">
+                ⭐⭐⭐⭐⭐
+              </div>
+              <span class="ml-2 text-sm transition-colors duration-300" :class="lightMode ? 'text-gray-500' : 'text-gray-400'">5.0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="animate-slide-up" style="animation-delay: 0.1s">
+          <div class="h-full p-8 rounded-2xl border transition-all duration-300 hover:shadow-xl hover:scale-105" :class="lightMode ? 'bg-gray-50 border-gray-200' : 'bg-gray-900 border-gray-800'">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-teal-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                P
+              </div>
+              <div class="ml-4">
+                <h3 class="font-semibold transition-colors duration-300" :class="lightMode ? 'text-gray-900' : 'text-white'">Priya Patel</h3>
+                <p class="text-sm transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-400'">Team Lead</p>
+              </div>
+            </div>
+            <p class="text-sm leading-relaxed mb-6 transition-colors duration-300" :class="lightMode ? 'text-gray-700' : 'text-gray-300'">
+              "Working with Sushant was a great experience. His knowledge of CI/CD pipelines and cloud infrastructure helped us reduce deployment time by 75%. Highly recommended!"
+            </p>
+            <div class="flex items-center">
+              <div class="flex text-yellow-400">
+                ⭐⭐⭐⭐⭐
+              </div>
+              <span class="ml-2 text-sm transition-colors duration-300" :class="lightMode ? 'text-gray-500' : 'text-gray-400'">5.0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="animate-slide-up" style="animation-delay: 0.2s">
+          <div class="h-full p-8 rounded-2xl border transition-all duration-300 hover:shadow-xl hover:scale-105" :class="lightMode ? 'bg-gray-50 border-gray-200' : 'bg-gray-900 border-gray-800'">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                R
+              </div>
+              <div class="ml-4">
+                <h3 class="font-semibold transition-colors duration-300" :class="lightMode ? 'text-gray-900' : 'text-white'">Rajesh Kumar</h3>
+                <p class="text-sm transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-400'">Solutions Architect</p>
+              </div>
+            </div>
+            <p class="text-sm leading-relaxed mb-6 transition-colors duration-300" :class="lightMode ? 'text-gray-700' : 'text-gray-300'">
+              "Sushant's deep understanding of AWS services and Terraform helped us build a scalable and secure infrastructure. His collaborative approach made the project successful."
+            </p>
+            <div class="flex items-center">
+              <div class="flex text-yellow-400">
+                ⭐⭐⭐⭐⭐
+              </div>
+              <span class="ml-2 text-sm transition-colors duration-300" :class="lightMode ? 'text-gray-500' : 'text-gray-400'">5.0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add Testimonial CTA -->
+      <div class="text-center mt-12">
+        <p class="text-sm mb-4 transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-400'">
+          Have you worked with me? I'd love to hear your feedback!
+        </p>
+        <button
+          onclick="openTestimonialForm()"
+          class="inline-flex items-center px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
+          :class="lightMode ? 'bg-blue-600 text-white hover:bg-blue-700' : 'bg-blue-500 text-white hover:bg-blue-600'"
+        >
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+          </svg>
+          Share Your Experience
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonial Form Modal -->
+<div id="testimonial-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+  <div class="flex items-center justify-center min-h-screen p-4">
+    <div class="max-w-lg w-full rounded-xl border" :class="lightMode ? 'bg-white border-gray-200' : 'bg-gray-900 border-gray-700'">
+      <div class="flex justify-between items-center p-6 border-b" :class="lightMode ? 'border-gray-200' : 'border-gray-700'">
+        <h2 class="text-2xl font-bold transition-colors duration-300" :class="lightMode ? 'text-gray-900' : 'text-white'">Share Your Experience</h2>
+        <button onclick="closeTestimonialForm()" class="text-gray-500 hover:text-gray-700 transition-colors duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <form class="p-6 space-y-4" onsubmit="submitTestimonial(event)">
+        <div>
+          <label class="block text-sm font-medium mb-2 transition-colors duration-300" :class="lightMode ? 'text-gray-700' : 'text-gray-300'">Your Name</label>
+          <input type="text" required class="w-full px-4 py-2 rounded-lg border transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50" :class="lightMode ? 'bg-white border-gray-200 text-gray-900' : 'bg-gray-800 border-gray-700 text-white'">
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-2 transition-colors duration-300" :class="lightMode ? 'text-gray-700' : 'text-gray-300'">Your Title</label>
+          <input type="text" required class="w-full px-4 py-2 rounded-lg border transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50" :class="lightMode ? 'bg-white border-gray-200 text-gray-900' : 'bg-gray-800 border-gray-700 text-white'">
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-2 transition-colors duration-300" :class="lightMode ? 'text-gray-700' : 'text-gray-300'">Your Testimonial</label>
+          <textarea rows="4" required class="w-full px-4 py-2 rounded-lg border transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50" :class="lightMode ? 'bg-white border-gray-200 text-gray-900' : 'bg-gray-800 border-gray-700 text-white'"></textarea>
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-2 transition-colors duration-300" :class="lightMode ? 'text-gray-700' : 'text-gray-300'">Rating</label>
+          <div class="flex space-x-2">
+            <button type="button" class="star-rating text-2xl text-gray-300 hover:text-yellow-400 transition-colors duration-300" onclick="setRating(1)">⭐</button>
+            <button type="button" class="star-rating text-2xl text-gray-300 hover:text-yellow-400 transition-colors duration-300" onclick="setRating(2)">⭐</button>
+            <button type="button" class="star-rating text-2xl text-gray-300 hover:text-yellow-400 transition-colors duration-300" onclick="setRating(3)">⭐</button>
+            <button type="button" class="star-rating text-2xl text-gray-300 hover:text-yellow-400 transition-colors duration-300" onclick="setRating(4)">⭐</button>
+            <button type="button" class="star-rating text-2xl text-gray-300 hover:text-yellow-400 transition-colors duration-300" onclick="setRating(5)">⭐</button>
+          </div>
+        </div>
+        <button type="submit" class="w-full py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500/50" :class="lightMode ? 'bg-blue-600 text-white hover:bg-blue-700' : 'bg-blue-500 text-white hover:bg-blue-600'">
+          Submit Testimonial
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  let selectedRating = 0;
+
+  function openTestimonialForm() {
+    document.getElementById('testimonial-modal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeTestimonialForm() {
+    document.getElementById('testimonial-modal').classList.add('hidden');
+    document.body.style.overflow = 'auto';
+  }
+
+  function setRating(rating) {
+    selectedRating = rating;
+    const stars = document.querySelectorAll('.star-rating');
+    stars.forEach((star, index) => {
+      if (index < rating) {
+        star.classList.add('text-yellow-400');
+        star.classList.remove('text-gray-300');
+      } else {
+        star.classList.add('text-gray-300');
+        star.classList.remove('text-yellow-400');
+      }
+    });
+  }
+
+  function submitTestimonial(event) {
+    event.preventDefault();
+    
+    // This is a static implementation - in a real scenario, you'd send this to a backend
+    alert('Thank you for your testimonial! Since this is a static portfolio, your feedback has been noted but not stored. In a real implementation, this would be sent to a backend service.');
+    
+    closeTestimonialForm();
+    
+    // Reset form
+    event.target.reset();
+    selectedRating = 0;
+    document.querySelectorAll('.star-rating').forEach(star => {
+      star.classList.add('text-gray-300');
+      star.classList.remove('text-yellow-400');
+    });
+  }
+
+  // Close modal when clicking outside
+  document.getElementById('testimonial-modal').addEventListener('click', function(e) {
+    if (e.target === this) {
+      closeTestimonialForm();
+    }
+  });
+</script>
