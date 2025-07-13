@@ -27,42 +27,42 @@
         <!-- Filter Buttons -->
         <div class="flex flex-wrap gap-3">
           <button
-            onclick="filterContent('all')"
+            onclick="filterContent(event, 'all')"
             class="filter-btn active px-4 py-2 rounded-full font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
             :class="lightMode ? 'bg-blue-600 text-white hover:bg-blue-700' : 'bg-blue-500 text-white hover:bg-blue-600'"
           >
             All
           </button>
           <button
-            onclick="filterContent('aws')"
+            onclick="filterContent(event, 'aws')"
             class="filter-btn px-4 py-2 rounded-full font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
             :class="lightMode ? 'bg-gray-200 text-gray-700 hover:bg-gray-300' : 'bg-gray-700 text-gray-300 hover:bg-gray-600'"
           >
             AWS
           </button>
           <button
-            onclick="filterContent('kubernetes')"
+            onclick="filterContent(event, 'kubernetes')"
             class="filter-btn px-4 py-2 rounded-full font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
             :class="lightMode ? 'bg-gray-200 text-gray-700 hover:bg-gray-300' : 'bg-gray-700 text-gray-300 hover:bg-gray-600'"
           >
             Kubernetes
           </button>
           <button
-            onclick="filterContent('docker')"
+            onclick="filterContent(event, 'docker')"
             class="filter-btn px-4 py-2 rounded-full font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
             :class="lightMode ? 'bg-gray-200 text-gray-700 hover:bg-gray-300' : 'bg-gray-700 text-gray-300 hover:bg-gray-600'"
           >
             Docker
           </button>
           <button
-            onclick="filterContent('terraform')"
+            onclick="filterContent(event, 'terraform')"
             class="filter-btn px-4 py-2 rounded-full font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
             :class="lightMode ? 'bg-gray-200 text-gray-700 hover:bg-gray-300' : 'bg-gray-700 text-gray-300 hover:bg-gray-600'"
           >
             Terraform
           </button>
           <button
-            onclick="filterContent('cicd')"
+            onclick="filterContent(event, 'cicd')"
             class="filter-btn px-4 py-2 rounded-full font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
             :class="lightMode ? 'bg-gray-200 text-gray-700 hover:bg-gray-300' : 'bg-gray-700 text-gray-300 hover:bg-gray-600'"
           >
@@ -204,26 +204,21 @@
   }
 
   // Filter content
-  function filterContent(filter) {
+  function filterContent(event, filter) {
     currentFilter = filter;
     
     // Update button states
     document.querySelectorAll('.filter-btn').forEach(btn => {
       btn.classList.remove('active');
-      if (Alpine.store('theme') && Alpine.store('theme').lightMode) {
-        btn.className = 'filter-btn px-4 py-2 rounded-full font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50 bg-gray-200 text-gray-700 hover:bg-gray-300';
-      } else {
-        btn.className = 'filter-btn px-4 py-2 rounded-full font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50 bg-gray-700 text-gray-300 hover:bg-gray-600';
-      }
+      btn.classList.remove('bg-blue-600', 'text-white', 'hover:bg-blue-700', 'bg-blue-500', 'hover:bg-blue-600');
+      btn.classList.add('bg-gray-200', 'text-gray-700', 'hover:bg-gray-300');
     });
 
     // Highlight active button
-    event.target.classList.add('active');
-    if (Alpine.store('theme') && Alpine.store('theme').lightMode) {
-      event.target.className = 'filter-btn active px-4 py-2 rounded-full font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50 bg-blue-600 text-white hover:bg-blue-700';
-    } else {
-      event.target.className = 'filter-btn active px-4 py-2 rounded-full font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50 bg-blue-500 text-white hover:bg-blue-600';
-    }
+    const button = event.target;
+    button.classList.add('active');
+    button.classList.remove('bg-gray-200', 'text-gray-700', 'hover:bg-gray-300');
+    button.classList.add('bg-blue-600', 'text-white', 'hover:bg-blue-700');
 
     // Re-run search if there's a query
     performSearch();
