@@ -1,1 +1,0 @@
-fix: correct astro config and ignore dist
