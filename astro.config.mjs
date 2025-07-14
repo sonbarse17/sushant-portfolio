@@ -7,3 +7,2137 @@ export default defineConfig({
   site: 'https://sonbarse17.github.io',
   base: '/sushant-portfolio'
 });
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17.github.io',
+  base: '/sushant-portfolio'
+});
+export default defineConfig({
+  integrations: [tailwind()],
+  output: 'static',
+  site: 'https://sonbarse17

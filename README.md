@@ -15,7 +15,7 @@ A modern, professional portfolio website built with Astro, Tailwind CSS, and Alp
 
 ## 🛠️ Tech Stack
 
-- **Framework**: [Astro](https://astro.build/) v4.16+ - Static Site Generator
+- **Framework**: [Astro](https://astro.build) v4.16+ - Static Site Generator
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/) v3.4+ - Utility-first CSS
 - **Interactivity**: [Alpine.js](https://alpinejs.dev/) v3.14+ - Minimal JavaScript framework
 - **Fonts**: [Inter](https://fonts.google.com/specimen/Inter) - Modern sans-serif
