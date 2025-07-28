@@ -37,7 +37,7 @@ export default function DevOpsHero() {
 
   return (
     <ScrollFadeIn>
-      <section className="min-h-screen bg-transparent relative overflow-hidden flex items-center">
+      <section id="home" className="min-h-screen bg-transparent relative overflow-hidden flex items-center">
       {/* Animated Background Grid */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(37,99,235,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(37,99,235,0.08)_1px,transparent_1px)] bg-[size:60px_60px] animate-pulse"></div>
       
