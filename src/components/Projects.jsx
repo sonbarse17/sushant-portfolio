@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 // Featured repositories to highlight (optional)
+// Add your new repo name here to feature it at the top
 const featuredRepos = [
   'sushant-portfolio',
   'DevOps-Projects', 
@@ -9,6 +10,7 @@ const featuredRepos = [
   'Kubernetes-Deployment',
   'CI-CD-Pipeline',
   'Terraform-Modules'
+  // Add new repo names here: 'your-new-repo-name'
 ];
 
 export default function Projects() {
