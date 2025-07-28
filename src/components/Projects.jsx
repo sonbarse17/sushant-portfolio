@@ -117,12 +117,25 @@ export default function Projects() {
       <section id="projects" className="py-20 bg-transparent relative z-10">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white text-contrast">
-            GitHub Projects
-          </h2>
-          <p className="text-lg text-slate-200 text-contrast">
-            Latest repositories from my GitHub profile
-          </p>
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white text-contrast">
+                GitHub Projects
+              </h2>
+              <p className="text-lg text-slate-200 text-contrast">
+                Latest repositories from my GitHub profile
+              </p>
+            </div>
+            <a 
+              href="/sushant-portfolio/repositories" 
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-500/20 to-yellow-400/20 border border-yellow-400/30 rounded-xl text-yellow-300 font-semibold hover:bg-yellow-400/10 hover:scale-105 transition-all duration-300 mt-4 md:mt-0"
+            >
+              View All Repositories
+              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+              </svg>
+            </a>
+          </div>
         </div>
 
         {loading ? (
