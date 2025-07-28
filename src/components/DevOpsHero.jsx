@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import ScrollFadeIn from './ScrollFadeIn.jsx';
 
 export default function DevOpsHero() {
   const [terminalText, setTerminalText] = useState('');
@@ -35,7 +36,8 @@ export default function DevOpsHero() {
   }, [currentCommand]);
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 relative overflow-hidden flex items-center">
+    <ScrollFadeIn>
+      <section className="min-h-screen bg-transparent relative overflow-hidden flex items-center">
       {/* Animated Background Grid */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(37,99,235,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(37,99,235,0.08)_1px,transparent_1px)] bg-[size:60px_60px] animate-pulse"></div>
       
@@ -64,10 +66,10 @@ export default function DevOpsHero() {
 
             <div className="mb-8">
               <h1 className="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
-                <span className="text-slate-200 text-3xl md:text-4xl font-light block mb-2 tracking-wide">
+                <span className="text-white text-3xl md:text-4xl font-light block mb-2 tracking-wide text-contrast">
                   Hello, I'm
                 </span>
-                <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-400 bg-clip-text text-transparent animate-gradient-x bg-[length:200%_200%] font-black tracking-tight">
+                <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-400 bg-clip-text text-transparent animate-gradient-x bg-[length:200%_200%] font-black tracking-tight" style="text-shadow: 0 2px 4px rgba(0,0,0,0.8)">
                   Sushant Sonbarse
                 </span>
               </h1>
@@ -75,21 +77,21 @@ export default function DevOpsHero() {
             </div>
 
             <div className="mb-8">
-              <span className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full text-white font-semibold text-lg shadow-lg hover:shadow-blue-500/25 transition-all duration-300">
+              <span className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full text-white font-semibold text-lg shadow-lg hover:shadow-blue-500/25 transition-all duration-300 backdrop-blur-sm border border-blue-400/30">
                 <span className="w-3 h-3 bg-green-400 rounded-full mr-3 animate-pulse"></span>
                 DevOps Engineer
               </span>
             </div>
 
-            <p className="text-slate-300 text-xl mb-4 max-w-2xl leading-relaxed">
-              <span className="font-semibold text-slate-100">1+ years</span> of experience building scalable cloud infrastructure and automating deployment pipelines.
+            <p className="text-white text-xl mb-4 max-w-2xl leading-relaxed text-contrast">
+              <span className="font-semibold text-white">1+ years</span> of experience building scalable cloud infrastructure and automating deployment pipelines.
             </p>
             
-            <p className="text-slate-400 text-lg mb-10 max-w-2xl">
-              Specialized in <span className="text-blue-400 font-medium">AWS</span>, 
-              <span className="text-cyan-400 font-medium">Kubernetes</span>, 
-              <span className="text-green-400 font-medium">Docker</span>, and 
-              <span className="text-purple-400 font-medium">CI/CD automation</span>
+            <p className="text-slate-200 text-lg mb-10 max-w-2xl text-contrast">
+              Specialized in <span className="text-blue-300 font-medium">AWS</span>, 
+              <span className="text-cyan-300 font-medium">Kubernetes</span>, 
+              <span className="text-green-300 font-medium">Docker</span>, and 
+              <span className="text-purple-300 font-medium">CI/CD automation</span>
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -162,6 +164,7 @@ export default function DevOpsHero() {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+    </ScrollFadeIn>
   );
 }

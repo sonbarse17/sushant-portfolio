@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import ScrollFadeIn from './ScrollFadeIn.jsx';
 
 export default function About() {
   const [lightMode, setLightMode] = useState(false);
@@ -9,15 +10,12 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" className={`py-20 transition-colors duration-300 ${
-      lightMode ? 'bg-gray-50' : 'bg-gray-900'
-    }`}>
+    <ScrollFadeIn>
+      <section id="about" className="py-20 bg-transparent relative z-10">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-slide-up">
-            <h2 className={`text-3xl sm:text-4xl font-bold mb-8 transition-colors duration-300 ${
-              lightMode ? 'text-gray-900' : 'text-white'
-            }`}>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-white text-contrast">
               About Me
             </h2>
           </div>
@@ -25,20 +23,14 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-up">
               <div className="mb-8">
-                <h3 className={`text-2xl font-bold mb-4 ${
-                  lightMode ? 'text-gray-900' : 'text-white'
-                }`}>
+                <h3 className="text-2xl font-bold mb-4 text-white text-contrast">
                   Professional Summary
                 </h3>
-                <p className={`text-lg leading-relaxed mb-4 transition-colors duration-300 ${
-                  lightMode ? 'text-gray-700' : 'text-slate-300'
-                }`}>
-                  <span className="font-semibold text-blue-600">DevOps Engineer</span> with 1+ years of experience in designing, implementing, and maintaining scalable cloud infrastructure. 
+                <p className="text-lg leading-relaxed mb-4 text-white text-contrast">
+                  <span className="font-semibold text-blue-300">DevOps Engineer</span> with 1+ years of experience in designing, implementing, and maintaining scalable cloud infrastructure. 
                   Expert in automating deployment pipelines, container orchestration, and infrastructure as code.
                 </p>
-                <p className={`text-lg leading-relaxed transition-colors duration-300 ${
-                  lightMode ? 'text-gray-600' : 'text-slate-400'
-                }`}>
+                <p className="text-lg leading-relaxed text-slate-200 text-contrast">
                   Proven track record of reducing deployment times by 85% and achieving 99.9% uptime through robust monitoring and automation strategies.
                 </p>
               </div>
@@ -99,6 +91,7 @@ export default function About() {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+    </ScrollFadeIn>
   );
 }

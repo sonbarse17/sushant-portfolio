@@ -1,5 +1,6 @@
 ---
 import Header from '../components/Header.jsx';
+import StarBackground from '../components/StarBackground.jsx';
 
 export interface Props {
   title: string;
@@ -47,10 +48,10 @@ const { title, description = "Portfolio of Sushant Sonbarse, DevOps Engineer spe
       --accent: #06b6d4;
       --accent-dark: #0891b2;
       --background: #0f172a;
-      --surface: #1e293b;
-      --text-primary: #f8fafc;
-      --text-secondary: #cbd5e1;
-      --text-muted: #64748b;
+      --surface: rgba(30, 41, 59, 0.8);
+      --text-primary: #ffffff;
+      --text-secondary: #e2e8f0;
+      --text-muted: #94a3b8;
       --border: #334155;
       --shadow: rgba(37, 99, 235, 0.1);
     }
@@ -63,6 +64,20 @@ const { title, description = "Portfolio of Sushant Sonbarse, DevOps Engineer spe
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       line-height: 1.6;
       letter-spacing: -0.01em;
+      background: var(--background);
+      color: var(--text-primary);
+      overflow-x: hidden;
+    }
+    
+    /* Enhanced text contrast for star background */
+    .text-contrast {
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    }
+    
+    /* Ensure all content is above stars */
+    main {
+      position: relative;
+      z-index: 1;
     }
     
     @keyframes gradient-x {
@@ -230,9 +245,10 @@ const { title, description = "Portfolio of Sushant Sonbarse, DevOps Engineer spe
   </style>
 </head>
 <body class="bg-black text-white transition-colors duration-300" :class="lightMode ? 'bg-white text-gray-900' : 'bg-black text-white'">
+  <StarBackground client:load />
   <Header client:load />
 
-  <main class="pt-16 sm:pt-20">
+  <main class="pt-16 sm:pt-20 relative z-10">
     <slot />
   </main>
 

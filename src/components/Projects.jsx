@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import ScrollFadeIn from './ScrollFadeIn.jsx';
 
 // Featured repositories to highlight (optional)
 // Add your new repo name here to feature it at the top
@@ -112,19 +113,14 @@ export default function Projects() {
   };
 
   return (
-    <section id="projects" className={`py-20 transition-colors duration-300 ${
-      lightMode ? 'bg-white' : 'bg-black'
-    }`}>
+    <ScrollFadeIn>
+      <section id="projects" className="py-20 bg-transparent relative z-10">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16 animate-slide-up">
-          <h2 className={`text-3xl sm:text-4xl font-bold mb-4 transition-colors duration-300 ${
-            lightMode ? 'text-gray-900' : 'text-white'
-          }`}>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white text-contrast">
             GitHub Projects
           </h2>
-          <p className={`text-lg transition-colors duration-300 ${
-            lightMode ? 'text-gray-600' : 'text-gray-300'
-          }`}>
+          <p className="text-lg text-slate-200 text-contrast">
             Latest repositories from my GitHub profile
           </p>
         </div>
@@ -271,7 +267,8 @@ export default function Projects() {
             ))}
           </div>
         )}
-      </div>
-    </section>
+        </div>
+      </section>
+    </ScrollFadeIn>
   );
 }
