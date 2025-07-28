@@ -194,13 +194,20 @@ export default function Projects() {
                     <div className={`h-32 flex items-center justify-center transition-colors duration-300 relative overflow-hidden ${
                       lightMode ? 'bg-gradient-to-br from-blue-50 to-cyan-50' : 'bg-gradient-to-br from-slate-800 to-slate-700'
                     }`}>
-                      <div className="text-4xl group-hover:scale-110 transition-transform duration-300">
-                        {project.language === 'JavaScript' ? '🟨' : 
-                         project.language === 'Python' ? '🐍' :
-                         project.language === 'TypeScript' ? '🔷' :
-                         project.language === 'HTML' ? '🌐' :
-                         project.language === 'CSS' ? '🎨' :
-                         project.language === 'Shell' ? '💻' : '🚀'}
+                      <div className="w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        {project.language === 'JavaScript' ? 
+                          <span className="text-4xl">🟨</span> : 
+                         project.language === 'Python' ? 
+                          <img src="/sushant-portfolio/icons/python.svg" alt="Python" className="w-12 h-12" /> :
+                         project.language === 'TypeScript' ? 
+                          <span className="text-4xl">🔷</span> :
+                         project.language === 'HTML' ? 
+                          <span className="text-4xl">🌐</span> :
+                         project.language === 'CSS' ? 
+                          <span className="text-4xl">🎨</span> :
+                         project.language === 'Shell' ? 
+                          <img src="/sushant-portfolio/icons/bash.png" alt="Shell" className="w-12 h-12" /> : 
+                          <span className="text-4xl">🚀</span>}
                       </div>
                       <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>

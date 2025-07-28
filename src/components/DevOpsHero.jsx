@@ -47,10 +47,10 @@ export default function DevOpsHero() {
       {/* Floating DevOps Icons */}
       <div className="absolute inset-0">
         <div className="absolute top-40 right-20 w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center animate-bounce-slow">
-          <span className="text-xl">☸️</span>
+          <img src="/sushant-portfolio/icons/kubernetes.png" alt="Kubernetes" className="w-6 h-6" />
         </div>
         <div className="absolute bottom-40 right-40 w-14 h-14 bg-orange-500/20 rounded-lg flex items-center justify-center animate-pulse">
-          <span className="text-xl">🔧</span>
+          <img src="/sushant-portfolio/icons/jenkins.png" alt="Jenkins" className="w-8 h-8" />
         </div>
       </div>
 
