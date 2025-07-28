@@ -42,11 +42,11 @@ export default function About() {
                     { name: 'Prometheus', icon: '/sushant-portfolio/icons/prometheus.png' },
                     { name: 'Grafana', icon: '/sushant-portfolio/icons/grafana.png' }
                   ].map((skill, index) => (
-                    <div key={skill.name} className="flex flex-col items-center justify-center p-4 bg-slate-800/50 rounded-lg border border-slate-700/50 hover:border-blue-400/50 transition-all duration-300 hover:scale-105 min-h-[80px]">
-                      <div className="w-8 h-8 flex items-center justify-center mb-2">
+                    <div key={skill.name} className="flex flex-col items-center p-3 bg-slate-800/50 rounded-lg border border-slate-700/50 hover:border-blue-400/50 transition-all duration-300 hover:scale-105 h-20">
+                      <div className="w-8 h-8 flex items-center justify-center mb-1">
                         <img src={skill.icon} alt={skill.name} className="w-full h-full object-contain" />
                       </div>
-                      <span className="text-xs text-slate-300 text-center font-medium leading-tight">{skill.name}</span>
+                      <span className="text-xs text-slate-300 text-center font-medium">{skill.name}</span>
                     </div>
                   ))}
                 </div>
