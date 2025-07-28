@@ -62,12 +62,17 @@ export default function DevOpsHero() {
           <div className="text-center lg:text-left">
 
 
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              <span className="text-slate-100">Hi, I'm </span>
-              <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                Sushant Sonbarse
-              </span>
-            </h1>
+            <div className="mb-8">
+              <h1 className="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
+                <span className="text-slate-200 text-3xl md:text-4xl font-light block mb-2 tracking-wide">
+                  Hello, I'm
+                </span>
+                <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-400 bg-clip-text text-transparent animate-gradient-x bg-[length:200%_200%] font-black tracking-tight">
+                  Sushant Sonbarse
+                </span>
+              </h1>
+              <div className="h-1 w-32 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full mx-auto lg:mx-0 mb-6"></div>
+            </div>
 
             <div className="mb-8">
               <span className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full text-white font-semibold text-lg shadow-lg hover:shadow-blue-500/25 transition-all duration-300">
