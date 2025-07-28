@@ -170,13 +170,32 @@ const { title, description = "Portfolio of Sushant Sonbarse, DevOps Engineer spe
       0% { left: -100%; }
       100% { left: 100%; }
     }
+
+    .animate-float {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .animate-bounce-slow {
+      animation: bounce-slow 2s ease-in-out infinite;
+    }
+
+    @keyframes bounce-slow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
   </style>
 </head>
 <body class="bg-black text-white transition-colors duration-300" :class="lightMode ? 'bg-white text-gray-900' : 'bg-black text-white'">
   <!-- Header -->
   <header class="fixed top-0 w-full backdrop-blur-xl z-50 border-b shadow-2xl transition-colors duration-300" :class="lightMode ? 'bg-white/80 border-gray-200/50' : 'bg-black/80 border-gray-800/50'">
     <nav class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
-      <h1 class="text-lg sm:text-xl font-bold transition-colors duration-300" :class="lightMode ? 'text-blue-600' : 'text-blue-400'">Sushant Sonbarse</h1>
+      <div class="flex items-center space-x-3">
+        <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center text-white font-bold text-sm">S</div>
+        <div>
+          <h1 class="text-lg sm:text-xl font-bold transition-colors duration-300" :class="lightMode ? 'text-blue-600' : 'text-blue-400'">Sushant Sonbarse</h1>
+          <div class="text-xs text-gray-500 font-mono">DevOps Engineer</div>
+        </div>
+      </div>
       <div class="flex items-center gap-4">
         <div class="text-sm transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-400'">
           <span class="font-medium">Portfolio Views:</span> <span id="traffic-count" class="text-blue-400 font-bold">-</span>

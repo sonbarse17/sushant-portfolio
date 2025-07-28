@@ -1,9 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero.jsx';
+import DevOpsHero from '../components/DevOpsHero.jsx';
+import DevOpsPipeline from '../components/DevOpsPipeline.jsx';
+import InfrastructureDashboard from '../components/InfrastructureDashboard.jsx';
+import DevOpsSkills from '../components/DevOpsSkills.jsx';
+import DevOpsContact from '../components/DevOpsContact.jsx';
 import About from '../components/About.astro';
 import Experience from '../components/Experience.astro';
-import Skills from '../components/Skills.jsx';
 import Projects from '../components/Projects.astro';
 import InteractiveDemo from '../components/InteractiveDemo.astro';
 import Blog from '../components/Blog.astro';
@@ -17,11 +20,12 @@ import Contact from '../components/Contact.astro';
 ---
 
 <Layout title="Sushant Sonbarse — DevOps Engineer">
-  <Hero client:load />
-  <SearchFilter />
+  <DevOpsHero client:load />
+  <DevOpsPipeline client:load />
+  <InfrastructureDashboard client:load />
+  <DevOpsSkills client:load />
   <About />
   <Experience />
-  <Skills client:load />
   <Projects />
   <InteractiveDemo />
   <Blog />
@@ -30,7 +34,7 @@ import Contact from '../components/Contact.astro';
   <ToolComparisons />
   <GitHub />
   <LinkedIn />
-  <Contact />
+  <DevOpsContact client:load />
 </Layout>
 
 <style>
