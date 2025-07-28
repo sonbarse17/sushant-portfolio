@@ -69,7 +69,7 @@ export default function DevOpsHero() {
                 <span className="text-white text-3xl md:text-4xl font-light block mb-2 tracking-wide text-contrast">
                   Hello, I'm
                 </span>
-                <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-400 bg-clip-text text-transparent animate-gradient-x bg-[length:200%_200%] font-black tracking-tight" style="text-shadow: 0 2px 4px rgba(0,0,0,0.8)">
+                <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-400 bg-clip-text text-transparent animate-gradient-x bg-[length:200%_200%] font-black tracking-tight" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>
                   Sushant Sonbarse
                 </span>
               </h1>
