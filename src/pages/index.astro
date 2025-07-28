@@ -14,7 +14,7 @@ import TechTimeline from '../components/TechTimeline.astro';
 import Testimonials from '../components/Testimonials.astro';
 import ToolComparisons from '../components/ToolComparisons.astro';
 import SearchFilter from '../components/SearchFilter.astro';
-import GitHub from '../components/GitHub.astro';
+import GitHub from '../components/GitHub.jsx';
 import LinkedIn from '../components/LinkedIn.astro';
 import Contact from '../components/Contact.astro';
 ---
@@ -32,7 +32,7 @@ import Contact from '../components/Contact.astro';
   <TechTimeline />
   <Testimonials />
   <ToolComparisons />
-  <GitHub />
+  <GitHub client:load />
   <LinkedIn />
   <DevOpsContact client:load />
 </Layout>
