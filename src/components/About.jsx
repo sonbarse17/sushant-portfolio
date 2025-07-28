@@ -33,17 +33,17 @@ export default function About() {
                 {/* Skill Icons */}
                 <div className="grid grid-cols-4 md:grid-cols-8 gap-4 mb-6">
                   {[
-                    { name: 'Kubernetes', icon: '☸️' },
-                    { name: 'Docker', icon: '🐳' },
-                    { name: 'AWS', icon: '☁️' },
-                    { name: 'Terraform', icon: '🏗️' },
-                    { name: 'Linux', icon: '🐧' },
-                    { name: 'Jenkins', icon: '🔧' },
-                    { name: 'Prometheus', icon: '📊' },
-                    { name: 'Grafana', icon: '📈' }
+                    { name: 'Kubernetes', icon: '/sushant-portfolio/icons/kubernetes.png' },
+                    { name: 'Docker', icon: '/sushant-portfolio/icons/docker.png' },
+                    { name: 'AWS', icon: '/sushant-portfolio/icons/aws.png' },
+                    { name: 'Terraform', icon: '/sushant-portfolio/icons/terraform.png' },
+                    { name: 'Linux', icon: '/sushant-portfolio/icons/linux.gif' },
+                    { name: 'Jenkins', icon: '/sushant-portfolio/icons/jenkins.png' },
+                    { name: 'Prometheus', icon: '/sushant-portfolio/icons/prometheus.png' },
+                    { name: 'Grafana', icon: '/sushant-portfolio/icons/grafana.png' }
                   ].map((skill, index) => (
                     <div key={skill.name} className="flex flex-col items-center p-3 bg-slate-800/50 rounded-lg border border-slate-700/50 hover:border-blue-400/50 transition-all duration-300 hover:scale-105">
-                      <span className="text-2xl mb-1">{skill.icon}</span>
+                      <img src={skill.icon} alt={skill.name} className="w-8 h-8 mb-1 object-contain" />
                       <span className="text-xs text-slate-300 text-center">{skill.name}</span>
                     </div>
                   ))}

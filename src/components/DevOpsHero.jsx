@@ -46,13 +46,10 @@ export default function DevOpsHero() {
       
       {/* Floating DevOps Icons */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-16 h-16 bg-blue-500/20 rounded-lg flex items-center justify-center animate-float">
-          <span className="text-2xl">🐳</span>
-        </div>
         <div className="absolute top-40 right-20 w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center animate-bounce-slow">
           <span className="text-xl">☸️</span>
         </div>
-        <div className="absolute bottom-40 left-20 w-14 h-14 bg-orange-500/20 rounded-lg flex items-center justify-center animate-pulse">
+        <div className="absolute bottom-40 right-40 w-14 h-14 bg-orange-500/20 rounded-lg flex items-center justify-center animate-pulse">
           <span className="text-xl">🔧</span>
         </div>
       </div>
@@ -64,17 +61,11 @@ export default function DevOpsHero() {
           <div className="text-center lg:text-left">
 
 
-            <div className="mb-8">
-              <h1 className="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
-                <span className="text-white text-3xl md:text-4xl font-light block mb-2 tracking-wide text-contrast">
-                  Hi, I'm
-                </span>
-                <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-yellow-400 bg-clip-text text-transparent animate-gradient-x bg-[length:200%_200%] font-black tracking-tight" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>
-                  Sushant Sonbarse
-                </span>
-              </h1>
-              <div className="h-1 w-32 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full mx-auto lg:mx-0 mb-6"></div>
-            </div>
+            <h1 className="text-4xl md:text-6xl font-bold mb-8 leading-tight text-center lg:text-left">
+              <span className="text-white block mb-2">
+                Hi, I'm Sushant Sonbarse
+              </span>
+            </h1>
 
             <div className="mb-8">
               <span className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full text-white font-semibold text-lg shadow-lg hover:shadow-blue-500/25 transition-all duration-300 backdrop-blur-sm border border-blue-400/30">
