@@ -57,16 +57,7 @@ export default function DevOpsHero() {
           
           {/* Left: Profile & Info */}
           <div className="text-center lg:text-left">
-            <div className="mb-8">
-              <div className="relative inline-block">
-                <img 
-                  src="/sushant-portfolio/images/Snapchat-1800569552-01-removebg-preview.png" 
-                  alt="Sushant Sonbarse" 
-                  className="w-32 h-32 rounded-full border-4 border-blue-500 shadow-2xl shadow-blue-500/50"
-                />
-                <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-gray-900 animate-pulse"></div>
-              </div>
-            </div>
+
 
             <h1 className="text-5xl font-bold mb-4">
               <span className="text-white">Hi, I'm </span>
