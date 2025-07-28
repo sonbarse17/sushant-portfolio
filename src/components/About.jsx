@@ -24,31 +24,62 @@ export default function About() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-up">
-              <p className={`text-lg sm:text-xl mb-6 leading-relaxed transition-colors duration-300 ${
-                lightMode ? 'text-gray-700' : 'text-gray-300'
-              }`}>
-                DevOps Engineer specializing in cloud infrastructure, automation, and CI/CD pipelines. 
-                Skilled in AWS services, containerization with Docker and Kubernetes, and Infrastructure as Code using Terraform. 
-                Passionate about optimizing deployment processes and building reliable, scalable systems.
-              </p>
-
-              <div className="grid grid-cols-2 gap-6 mb-8">
-                <div className={`text-center p-6 rounded-xl border transition-colors duration-300 ${
-                  lightMode ? 'bg-white border-gray-200 shadow-lg' : 'bg-gray-800 border-gray-700'
+              <div className="mb-8">
+                <h3 className={`text-2xl font-bold mb-4 ${
+                  lightMode ? 'text-gray-900' : 'text-white'
                 }`}>
-                  <div className="text-3xl font-bold text-blue-500 mb-2">3+</div>
-                  <div className={`text-sm transition-colors duration-300 ${
-                    lightMode ? 'text-gray-600' : 'text-gray-400'
+                  Professional Summary
+                </h3>
+                <p className={`text-lg leading-relaxed mb-4 transition-colors duration-300 ${
+                  lightMode ? 'text-gray-700' : 'text-slate-300'
+                }`}>
+                  <span className="font-semibold text-blue-600">DevOps Engineer</span> with 3+ years of experience in designing, implementing, and maintaining scalable cloud infrastructure. 
+                  Expert in automating deployment pipelines, container orchestration, and infrastructure as code.
+                </p>
+                <p className={`text-lg leading-relaxed transition-colors duration-300 ${
+                  lightMode ? 'text-gray-600' : 'text-slate-400'
+                }`}>
+                  Proven track record of reducing deployment times by 85% and achieving 99.9% uptime through robust monitoring and automation strategies.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                <div className={`text-center p-4 rounded-xl border transition-all duration-300 hover:scale-105 hover:shadow-lg ${
+                  lightMode ? 'bg-white border-gray-200 shadow-md hover:shadow-blue-100' : 'bg-slate-800 border-slate-700 hover:shadow-blue-500/10'
+                }`}>
+                  <div className="text-2xl font-bold text-blue-500 mb-1">3+</div>
+                  <div className={`text-xs font-medium ${
+                    lightMode ? 'text-gray-600' : 'text-slate-400'
                   }`}>
                     Years Experience
                   </div>
                 </div>
-                <div className={`text-center p-6 rounded-xl border transition-colors duration-300 ${
-                  lightMode ? 'bg-white border-gray-200 shadow-lg' : 'bg-gray-800 border-gray-700'
+                <div className={`text-center p-4 rounded-xl border transition-all duration-300 hover:scale-105 hover:shadow-lg ${
+                  lightMode ? 'bg-white border-gray-200 shadow-md hover:shadow-green-100' : 'bg-slate-800 border-slate-700 hover:shadow-green-500/10'
                 }`}>
-                  <div className="text-3xl font-bold text-green-500 mb-2">15+</div>
-                  <div className={`text-sm transition-colors duration-300 ${
-                    lightMode ? 'text-gray-600' : 'text-gray-400'
+                  <div className="text-2xl font-bold text-green-500 mb-1">50+</div>
+                  <div className={`text-xs font-medium ${
+                    lightMode ? 'text-gray-600' : 'text-slate-400'
+                  }`}>
+                    Deployments
+                  </div>
+                </div>
+                <div className={`text-center p-4 rounded-xl border transition-all duration-300 hover:scale-105 hover:shadow-lg ${
+                  lightMode ? 'bg-white border-gray-200 shadow-md hover:shadow-cyan-100' : 'bg-slate-800 border-slate-700 hover:shadow-cyan-500/10'
+                }`}>
+                  <div className="text-2xl font-bold text-cyan-500 mb-1">99.9%</div>
+                  <div className={`text-xs font-medium ${
+                    lightMode ? 'text-gray-600' : 'text-slate-400'
+                  }`}>
+                    Uptime
+                  </div>
+                </div>
+                <div className={`text-center p-4 rounded-xl border transition-all duration-300 hover:scale-105 hover:shadow-lg ${
+                  lightMode ? 'bg-white border-gray-200 shadow-md hover:shadow-purple-100' : 'bg-slate-800 border-slate-700 hover:shadow-purple-500/10'
+                }`}>
+                  <div className="text-2xl font-bold text-purple-500 mb-1">15+</div>
+                  <div className={`text-xs font-medium ${
+                    lightMode ? 'text-gray-600' : 'text-slate-400'
                   }`}>
                     Technologies
                   </div>

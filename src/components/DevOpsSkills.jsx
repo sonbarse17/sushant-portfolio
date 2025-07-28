@@ -4,14 +4,25 @@ export default function DevOpsSkills() {
   const [activeCategory, setActiveCategory] = useState('cloud');
 
   const skillCategories = {
+    devops: {
+      title: 'DevOps Tools',
+      icon: '🔧',
+      color: 'from-blue-500 to-cyan-500',
+      skills: [
+        { name: 'Jenkins', level: 90, icon: '🔧', projects: '25+ pipelines' },
+        { name: 'GitLab CI', level: 85, icon: '🦊', projects: '15+ pipelines' },
+        { name: 'GitHub Actions', level: 88, icon: '🐙', projects: '20+ workflows' },
+        { name: 'Ansible', level: 82, icon: '🔴', projects: '12+ playbooks' }
+      ]
+    },
     cloud: {
       title: 'Cloud Platforms',
       icon: '☁️',
-      color: 'from-blue-500 to-cyan-500',
+      color: 'from-orange-500 to-red-500',
       skills: [
-        { name: 'AWS', level: 90, icon: '🟠', projects: '15+ projects' },
-        { name: 'Azure', level: 75, icon: '🔵', projects: '8+ projects' },
-        { name: 'GCP', level: 70, icon: '🟡', projects: '5+ projects' }
+        { name: 'AWS', level: 92, icon: '🟠', projects: '18+ projects' },
+        { name: 'Azure', level: 78, icon: '🔵', projects: '10+ projects' },
+        { name: 'GCP', level: 72, icon: '🟡', projects: '6+ projects' }
       ]
     },
     containers: {
@@ -24,34 +35,26 @@ export default function DevOpsSkills() {
         { name: 'Helm', level: 80, icon: '⚓', projects: '10+ projects' }
       ]
     },
-    cicd: {
-      title: 'CI/CD Tools',
-      icon: '🚀',
-      color: 'from-green-500 to-blue-500',
-      skills: [
-        { name: 'Jenkins', level: 90, icon: '🔧', projects: '25+ pipelines' },
-        { name: 'GitLab CI', level: 85, icon: '🦊', projects: '15+ pipelines' },
-        { name: 'GitHub Actions', level: 80, icon: '🐙', projects: '20+ workflows' }
-      ]
-    },
-    iac: {
-      title: 'Infrastructure as Code',
-      icon: '🏗️',
-      color: 'from-purple-500 to-pink-500',
-      skills: [
-        { name: 'Terraform', level: 90, icon: '🟣', projects: '18+ modules' },
-        { name: 'Ansible', level: 85, icon: '🔴', projects: '12+ playbooks' },
-        { name: 'CloudFormation', level: 75, icon: '🟠', projects: '8+ stacks' }
-      ]
-    },
     monitoring: {
       title: 'Monitoring & Observability',
       icon: '📊',
-      color: 'from-yellow-500 to-red-500',
+      color: 'from-green-500 to-blue-500',
       skills: [
-        { name: 'Prometheus', level: 85, icon: '🔥', projects: '10+ dashboards' },
-        { name: 'Grafana', level: 90, icon: '📈', projects: '15+ dashboards' },
-        { name: 'ELK Stack', level: 80, icon: '🔍', projects: '8+ implementations' }
+        { name: 'Prometheus', level: 88, icon: '🔥', projects: '12+ dashboards' },
+        { name: 'Grafana', level: 92, icon: '📈', projects: '18+ dashboards' },
+        { name: 'ELK Stack', level: 85, icon: '🔍', projects: '10+ implementations' },
+        { name: 'Datadog', level: 80, icon: '🐕', projects: '8+ setups' }
+      ]
+    },
+    os: {
+      title: 'OS & Others',
+      icon: '💻',
+      color: 'from-purple-500 to-pink-500',
+      skills: [
+        { name: 'Linux', level: 95, icon: '🐧', projects: 'Daily use' },
+        { name: 'Bash', level: 90, icon: '💻', projects: '100+ scripts' },
+        { name: 'Python', level: 85, icon: '🐍', projects: '20+ automations' },
+        { name: 'Git', level: 92, icon: '📝', projects: 'Version control' }
       ]
     }
   };
