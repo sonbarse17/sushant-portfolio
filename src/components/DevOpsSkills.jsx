@@ -125,27 +125,7 @@ export default function DevOpsSkills() {
             </div>
           </div>
 
-          {/* Certifications */}
-          <div className="mt-16 text-center">
-            <h3 className="text-2xl font-bold text-white mb-8">Certifications & Achievements</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 border border-orange-500/50 rounded-lg p-6">
-                <div className="text-3xl mb-3">🏆</div>
-                <h4 className="text-white font-semibold mb-2">AWS Certified</h4>
-                <p className="text-gray-300 text-sm">Solutions Architect Professional</p>
-              </div>
-              <div className="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border border-blue-500/50 rounded-lg p-6">
-                <div className="text-3xl mb-3">⚡</div>
-                <h4 className="text-white font-semibold mb-2">Kubernetes Expert</h4>
-                <p className="text-gray-300 text-sm">CKA & CKAD Certified</p>
-              </div>
-              <div className="bg-gradient-to-br from-green-500/20 to-blue-500/20 border border-green-500/50 rounded-lg p-6">
-                <div className="text-3xl mb-3">🚀</div>
-                <h4 className="text-white font-semibold mb-2">DevOps Engineer</h4>
-                <p className="text-gray-300 text-sm">1+ Years Experience</p>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
