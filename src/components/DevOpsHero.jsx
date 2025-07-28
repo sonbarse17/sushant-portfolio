@@ -77,7 +77,7 @@ export default function DevOpsHero() {
             </div>
 
             <p className="text-slate-300 text-xl mb-4 max-w-2xl leading-relaxed">
-              <span className="font-semibold text-slate-100">3+ years</span> of experience building scalable cloud infrastructure and automating deployment pipelines.
+              <span className="font-semibold text-slate-100">1+ years</span> of experience building scalable cloud infrastructure and automating deployment pipelines.
             </p>
             
             <p className="text-slate-400 text-lg mb-10 max-w-2xl">

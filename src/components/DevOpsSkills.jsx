@@ -141,8 +141,8 @@ export default function DevOpsSkills() {
               </div>
               <div className="bg-gradient-to-br from-green-500/20 to-blue-500/20 border border-green-500/50 rounded-lg p-6">
                 <div className="text-3xl mb-3">🚀</div>
-                <h4 className="text-white font-semibold mb-2">DevOps Leader</h4>
-                <p className="text-gray-300 text-sm">3+ Years Experience</p>
+                <h4 className="text-white font-semibold mb-2">DevOps Engineer</h4>
+                <p className="text-gray-300 text-sm">1+ Years Experience</p>
               </div>
             </div>
           </div>

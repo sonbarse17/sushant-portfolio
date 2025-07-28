@@ -87,7 +87,7 @@ export default function DevOpsContact() {
                     <div className="text-gray-400 text-sm">Support</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-yellow-400">3+</div>
+                    <div className="text-2xl font-bold text-yellow-400">1+</div>
                     <div className="text-gray-400 text-sm">Years Exp</div>
                   </div>
                 </div>

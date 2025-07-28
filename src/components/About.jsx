@@ -33,7 +33,7 @@ export default function About() {
                 <p className={`text-lg leading-relaxed mb-4 transition-colors duration-300 ${
                   lightMode ? 'text-gray-700' : 'text-slate-300'
                 }`}>
-                  <span className="font-semibold text-blue-600">DevOps Engineer</span> with 3+ years of experience in designing, implementing, and maintaining scalable cloud infrastructure. 
+                  <span className="font-semibold text-blue-600">DevOps Engineer</span> with 1+ years of experience in designing, implementing, and maintaining scalable cloud infrastructure. 
                   Expert in automating deployment pipelines, container orchestration, and infrastructure as code.
                 </p>
                 <p className={`text-lg leading-relaxed transition-colors duration-300 ${
@@ -47,7 +47,7 @@ export default function About() {
                 <div className={`text-center p-4 rounded-xl border transition-all duration-300 hover:scale-105 hover:shadow-lg ${
                   lightMode ? 'bg-white border-gray-200 shadow-md hover:shadow-blue-100' : 'bg-slate-800 border-slate-700 hover:shadow-blue-500/10'
                 }`}>
-                  <div className="text-2xl font-bold text-blue-500 mb-1">3+</div>
+                  <div className="text-2xl font-bold text-blue-500 mb-1">1+</div>
                   <div className={`text-xs font-medium ${
                     lightMode ? 'text-gray-600' : 'text-slate-400'
                   }`}>
