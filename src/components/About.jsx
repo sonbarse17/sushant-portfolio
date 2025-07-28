@@ -26,16 +26,31 @@ export default function About() {
                 <h3 className="text-2xl font-bold mb-4 text-white text-contrast">
                   Professional Summary
                 </h3>
-                <p className="text-lg leading-relaxed mb-4 text-white text-contrast">
-                  <span className="font-semibold text-blue-300">DevOps Engineer</span> with 1+ years of experience in designing, implementing, and maintaining scalable cloud infrastructure. 
-                  Expert in automating deployment pipelines, container orchestration, and infrastructure as code.
+                <p className="text-lg leading-relaxed mb-6 text-white text-contrast">
+                  <span className="font-semibold text-blue-300">DevOps Engineer</span> specializing in <span className="text-yellow-300">Kubernetes</span>, <span className="text-blue-300">AWS</span>, <span className="text-cyan-300">Terraform</span>, <span className="text-green-300">CI/CD</span>, and <span className="text-purple-300">Monitoring</span> solutions.
                 </p>
-                <p className="text-lg leading-relaxed text-slate-200 text-contrast">
-                  Proven track record of reducing deployment times by 85% and achieving 99.9% uptime through robust monitoring and automation strategies.
-                </p>
+                
+                {/* Skill Icons */}
+                <div className="grid grid-cols-4 md:grid-cols-8 gap-4 mb-6">
+                  {[
+                    { name: 'Kubernetes', icon: '☸️' },
+                    { name: 'Docker', icon: '🐳' },
+                    { name: 'AWS', icon: '☁️' },
+                    { name: 'Terraform', icon: '🏗️' },
+                    { name: 'Linux', icon: '🐧' },
+                    { name: 'Jenkins', icon: '🔧' },
+                    { name: 'Prometheus', icon: '📊' },
+                    { name: 'Grafana', icon: '📈' }
+                  ].map((skill, index) => (
+                    <div key={skill.name} className="flex flex-col items-center p-3 bg-slate-800/50 rounded-lg border border-slate-700/50 hover:border-blue-400/50 transition-all duration-300 hover:scale-105">
+                      <span className="text-2xl mb-1">{skill.icon}</span>
+                      <span className="text-xs text-slate-300 text-center">{skill.name}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
 
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                 <div className={`text-center p-4 rounded-xl border transition-all duration-300 hover:scale-105 hover:shadow-lg ${
                   lightMode ? 'bg-white border-gray-200 shadow-md hover:shadow-blue-100' : 'bg-slate-800 border-slate-700 hover:shadow-blue-500/10'
                 }`}>
