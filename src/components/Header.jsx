@@ -25,12 +25,7 @@ export default function Header() {
     fetchTraffic();
   }, []);
 
-  const toggleTheme = () => {
-    const newMode = !lightMode;
-    setLightMode(newMode);
-    localStorage.setItem('lightMode', newMode.toString());
-    document.documentElement.classList.toggle('light', newMode);
-  };
+
 
   return (
     <header className={`fixed top-0 w-full backdrop-blur-xl z-50 border-b shadow-2xl transition-colors duration-300 ${
@@ -58,22 +53,9 @@ export default function Header() {
           <a href="#contact" className="text-white hover:text-blue-400 transition-colors duration-300 font-medium">Contact</a>
         </nav>
         
-        <div className="flex items-center gap-4">
-          <div className="hidden sm:block text-sm text-gray-400">
-            <span className="font-medium">Views:</span> 
-            <span className="text-blue-400 font-bold ml-1">{trafficCount}</span>
-          </div>
-          
-          <button 
-            onClick={toggleTheme}
-            className="group relative p-2 sm:p-3 rounded-xl backdrop-blur-sm border border-gray-700/50 hover:border-blue-500/50 bg-gray-900/80 hover:bg-gray-800/80 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-blue-500/20"
-            aria-label="Toggle Theme"
-          >
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <span className="relative text-base sm:text-lg text-blue-400">
-              {lightMode ? '🌙' : '☀️'}
-            </span>
-          </button>
+        <div className="hidden sm:block text-sm text-gray-400">
+          <span className="font-medium">Views:</span> 
+          <span className="text-blue-400 font-bold ml-1">{trafficCount}</span>
         </div>
       </nav>
     </header>
