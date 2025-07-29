@@ -1,3 +1,6 @@
+import GitHubIcon from './icons/GitHubIcon';
+import LinkedInIcon from './icons/LinkedInIcon';
+
 export default function Header() {
   return (
     <header className={`fixed top-0 w-full backdrop-blur-xl z-50 border-b shadow-2xl transition-colors duration-300 ${
@@ -16,14 +19,14 @@ export default function Header() {
           </div>
         </div>
         
-        {/* Navigation Menu */}
-        <nav className="hidden md:flex items-center space-x-8">
-          <a href="#home" className="text-white hover:text-blue-400 transition-colors duration-300 font-medium">Home</a>
-          <a href="#about" className="text-white hover:text-blue-400 transition-colors duration-300 font-medium">About</a>
-          <a href="#experience" className="text-white hover:text-blue-400 transition-colors duration-300 font-medium">Experience</a>
-          <a href="#projects" className="text-white hover:text-blue-400 transition-colors duration-300 font-medium">Projects</a>
-          <a href="#contact" className="text-white hover:text-blue-400 transition-colors duration-300 font-medium">Contact</a>
-        </nav>
+        <div className="flex items-center space-x-4">
+          <a href="https://github.com/sonbarse17" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+            <GitHubIcon />
+          </a>
+          <a href="https://www.linkedin.com/in/sushant-sonbarse/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+            <LinkedInIcon />
+          </a>
+        </div>
       </nav>
     </header>
   );
