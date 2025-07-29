@@ -1,6 +1,5 @@
 ---
 import Header from '../components/Header.jsx';
-import StarBackground from '../components/StarBackground.jsx';
 
 export interface Props {
   title: string;
@@ -11,7 +10,7 @@ const { title, description = "Portfolio of Sushant Sonbarse, DevOps Engineer spe
 ---
 
 <!DOCTYPE html>
-<html lang="en" x-data="{ lightMode: false }" x-init="lightMode = localStorage.getItem('lightMode') === 'true'" :class="{ 'light': lightMode }">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -65,61 +64,9 @@ const { title, description = "Portfolio of Sushant Sonbarse, DevOps Engineer spe
       position: relative;
       z-index: 1;
     }
-
-    .bg-grid-pattern {
-      background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-      background-size: 40px 40px;
-    }
-  </style>
-
-    .parallax-bg {
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    .neon-glow {
-      text-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor;
-    }
-
-    .progress-bar {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .progress-bar::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-      animation: progress-shimmer 2s infinite;
-    }
-
-    @keyframes progress-shimmer {
-      0% { left: -100%; }
-      100% { left: 100%; }
-    }
-
-    .animate-float {
-      animation: float 3s ease-in-out infinite;
-    }
-
-    .animate-bounce-slow {
-      animation: bounce-slow 2s ease-in-out infinite;
-    }
-
-    @keyframes bounce-slow {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-5px); }
-    }
   </style>
 </head>
-<body class="bg-black text-white transition-colors duration-300" :class="lightMode ? 'bg-white text-gray-900' : 'bg-black text-white'">
-  <StarBackground client:load />
+<body class="bg-black text-white">
   <Header client:load />
 
   <main class="pt-16 sm:pt-20 relative z-10">
@@ -127,56 +74,10 @@ const { title, description = "Portfolio of Sushant Sonbarse, DevOps Engineer spe
   </main>
 
   <!-- Footer -->
-  <footer class="py-6 sm:py-8 mt-12 sm:mt-16 transition-colors duration-300" :class="lightMode ? 'bg-gray-100' : 'bg-black'">
-    <div class="container mx-auto px-4 sm:px-6 text-center transition-colors duration-300" :class="lightMode ? 'text-gray-600' : 'text-gray-500'">
+  <footer class="py-6 sm:py-8 mt-12 sm:mt-16 bg-black">
+    <div class="container mx-auto px-4 sm:px-6 text-center text-gray-500">
       <p class="text-sm sm:text-base">&copy; 2025 Sushant Sonbarse. All rights reserved.</p>
     </div>
   </footer>
-
-  <!-- Alpine.js -->
-  <script src="https://unpkg.com/alpinejs@3.14.7/dist/cdn.min.js" defer></script>
-
-  <!-- Visit Counter & Smooth scroll -->
-  <script>
-    // GitHub Pages traffic counter from JSON file
-    async function fetchGitHubTraffic() {
-      console.log('Fetching traffic data...');
-      try {
-        const url = '/sushant-portfolio/traffic.json?t=' + Date.now();
-        console.log('Fetching from URL:', url);
-        const response = await fetch(url);
-        console.log('Response status:', response.status);
-
-        if (response.ok) {
-          const data = await response.json();
-          console.log('Traffic data received:', data);
-          const views = data.last_24h?.views || data.total_views || 0;
-          console.log('Views to display:', views);
-          document.getElementById('traffic-count').textContent = views;
-          console.log('Traffic count updated successfully');
-        } else {
-          console.error('Failed to fetch traffic.json:', response.status);
-          document.getElementById('traffic-count').textContent = 'N/A';
-        }
-      } catch (error) {
-        console.error('Failed to fetch traffic data:', error);
-        document.getElementById('traffic-count').textContent = 'Error';
-      }
-    }
-
-    // Initialize traffic count on page load
-    document.addEventListener('DOMContentLoaded', fetchGitHubTraffic);
-
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-    });
-  </script>
 </body>
 </html>

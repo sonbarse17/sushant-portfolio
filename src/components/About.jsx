@@ -1,8 +1,5 @@
-import ScrollFadeIn from './ScrollFadeIn.jsx';
-
 export default function About() {
   return (
-    <ScrollFadeIn>
       <section id="about" className="py-24 bg-gray-900 text-white">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
@@ -40,6 +37,5 @@ export default function About() {
           </div>
         </div>
       </section>
-    </ScrollFadeIn>
   );
 }

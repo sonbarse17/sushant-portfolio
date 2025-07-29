@@ -1,103 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import DevOpsHero from '../components/DevOpsHero.jsx';
-import DevOpsPipeline from '../components/DevOpsPipeline.jsx';
-import InfrastructureDashboard from '../components/InfrastructureDashboard.jsx';
-import DevOpsSkills from '../components/DevOpsSkills.jsx';
-import DevOpsContact from '../components/DevOpsContact.jsx';
 import About from '../components/About.jsx';
 import Projects from '../components/Projects.jsx';
 import Experience from '../components/Experience.jsx';
-import InteractiveDemo from '../components/InteractiveDemo.astro';
-import Blog from '../components/Blog.astro';
-import TechTimeline from '../components/TechTimeline.astro';
-import Testimonials from '../components/Testimonials.astro';
-import ToolComparisons from '../components/ToolComparisons.astro';
-import SearchFilter from '../components/SearchFilter.astro';
-import GitHub from '../components/GitHub.jsx';
-import LinkedIn from '../components/LinkedIn.astro';
 import Contact from '../components/Contact.astro';
+import Skills from '../components/Skills.jsx';
 ---
 
 <Layout title="Sushant Sonbarse — DevOps Engineer">
   <DevOpsHero client:load />
-  <DevOpsPipeline client:load />
-  <InfrastructureDashboard client:load />
-  <DevOpsSkills client:load />
   <About client:load />
   <Experience client:load />
   <Projects client:load />
-  <InteractiveDemo />
-  <Blog />
-  <TechTimeline />
-  <Testimonials />
-  <ToolComparisons />
-  <GitHub client:load />
-  <LinkedIn />
-  <DevOpsContact client:load />
+  <Skills client:load />
+  <Contact />
 </Layout>
-
-<style>
-  /* Custom animations */
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-  
-  @keyframes slideUp {
-    from { 
-      opacity: 0; 
-      transform: translateY(30px); 
-    }
-    to { 
-      opacity: 1; 
-      transform: translateY(0); 
-    }
-  }
-  
-  .animate-fade-in {
-    animation: fadeIn 0.8s ease-out;
-  }
-  
-  .animate-slide-up {
-    animation: slideUp 0.8s ease-out;
-  }
-  
-  /* Intersection Observer animations */
-  .animate-on-scroll {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s ease-out;
-  }
-  
-  .animate-on-scroll.animate {
-    opacity: 1;
-    transform: translateY(0);
-  }
-</style>
-
-<script>
-  // Intersection Observer for scroll animations
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-  };
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animate');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, observerOptions);
-
-  // Observe all sections
-  document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('section');
-    sections.forEach(section => {
-      section.classList.add('animate-on-scroll');
-      observer.observe(section);
-    });
-  });
-</script>

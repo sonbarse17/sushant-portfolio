@@ -1,8 +1,5 @@
-import ScrollFadeIn from './ScrollFadeIn.jsx';
-
 export default function DevOpsHero() {
   return (
-    <ScrollFadeIn>
       <section id="home" className="min-h-screen bg-gray-900 text-white flex items-center justify-center text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-10 animate-pulse"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-gray-900 via-transparent to-gray-900"></div>
@@ -35,6 +32,5 @@ export default function DevOpsHero() {
           </div>
         </div>
       </section>
-    </ScrollFadeIn>
   );
 }
