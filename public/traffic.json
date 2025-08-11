@@ -1,14 +1,14 @@
 {
-  "total_views": 55,
+  "total_views": 33,
   "unique_views": 20,
-  "last_updated": "2025-08-11T12:37:12Z",
+  "last_updated": "2025-08-11T13:25:22Z",
   "last_24h": {
-    "views": 55,
+    "views": 33,
     "period": "24 hours",
-    "updated_at": "2025-08-11T12:37:12Z"
+    "updated_at": "2025-08-11T13:25:22Z"
   },
   "summary": {
-    "daily_average": 1.8,
+    "daily_average": 1.1,
     "status": "active"
   }
 }
